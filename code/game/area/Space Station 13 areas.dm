@@ -132,7 +132,6 @@ proc/process_ghost_teleport_locs()
 	power_equip = 0
 	power_environ = 0
 	has_gravity = 0
-	ambientsounds = list('sound/ambience/title2.ogg')
 
 /area/snow
 

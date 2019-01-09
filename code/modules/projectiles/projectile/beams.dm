@@ -124,3 +124,6 @@
 /obj/item/projectile/beam/pulse2/drone
 	damage = 20
 	flags = PASSTAU
+
+/obj/item/projectile/beam/lasgun
+	damage = 30

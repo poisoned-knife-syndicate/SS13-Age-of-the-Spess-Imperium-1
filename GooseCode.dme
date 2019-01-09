@@ -1253,6 +1253,7 @@
 #include "code\modules\projectiles\gun.dm"
 #include "code\modules\projectiles\projectile.dm"
 #include "code\modules\projectiles\projectilebeam.dm"
+#include "code\modules\projectiles\reload_machine.dm"
 #include "code\modules\projectiles\ammunition\boxes.dm"
 #include "code\modules\projectiles\ammunition\bullets.dm"
 #include "code\modules\projectiles\ammunition\energy.dm"
