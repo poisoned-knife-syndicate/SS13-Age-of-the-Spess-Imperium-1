@@ -180,7 +180,16 @@ imperial class helment
 	flags = HEADCOVERSEYES
 	item_state = "guardsman_helmet"
 	armor = list(melee = 30, bullet = 10, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
-	flags_inv = HIDEEARS|HIDEEYES
+	flags_inv = HIDEEARS
+
+/obj/item/clothing/head/imperialhelmet/medic
+	name = "Imperial Medic Flak Helmet"
+	desc = "Standard issue helmet given to Guardsmen Medics of the Imperial Guard. Lighter than the normal variant"
+	icon_state = "guardsmanmedic_helmet"
+	flags = HEADCOVERSEYES
+	item_state = "guardsmanmedic_helmet"
+	armor = list(melee = 25, bullet = 10, laser = 25,energy = 10, bomb = 15, bio = 25, rad = 0) //In case of... Nurgle?
+	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/imperialhelmet/reinforced
 	name = "Reinforced Imperial Flak Helmet"

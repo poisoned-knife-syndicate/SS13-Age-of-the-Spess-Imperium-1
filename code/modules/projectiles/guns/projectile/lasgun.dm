@@ -6,7 +6,7 @@ LASGUNS
 
 /obj/item/weapon/gun/projectile/automatic/lasgun
 	name = "Lasgun"
-	desc = "Standed issue ranged weapon of the Imperial Guard"
+	desc = "Standard issue ranged weapon given to Guardsmen of the Imperial Guard."
 	icon_state = "lasgun"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK
@@ -37,3 +37,15 @@ Adding a lascannon here because I would rather not make a new file for a simple 
 	mag_type = /obj/item/ammo_box/magazine/lascannonmag
 	fire_sound = 'sound/weapons/lasgun.ogg'
 	ejectcasing = 0 //Technically energy based! None of that!
+
+
+/obj/item/weapon/gun/projectile/automatic/lasgun/pistol
+	name = "Laspistol"
+	desc = "A variant of the classic Lasgun primarily given to support roles within the Imperial Guard."
+	icon_state = "lasgunpistol"
+	item_state = "lasgunpistol"
+	w_class = 3.0
+	origin_tech = "combat=5;materials=1;syndicate=2"
+	mag_type = /obj/item/ammo_box/magazine/lasgunmagpistol
+	fire_sound = 'sound/weapons/lasgun.ogg'
+

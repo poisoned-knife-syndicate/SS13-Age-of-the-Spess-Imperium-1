@@ -132,7 +132,7 @@
 /obj/item/ammo_casing/lasgun
 	desc = "ERMAHGAWD IF YOU SEES THIS REPORT TO ADMOON!"
 	caliber = "laser"
-	projectile_type = /obj/item/projectile/beam
+	projectile_type = /obj/item/projectile/beam/lasgun
 
 /obj/item/ammo_casing/hellgun
 	desc = "ERMAHGAWD IF YOU SEES THIS REPORT TO ADMOON!"
@@ -176,7 +176,7 @@
 	select_name = "scatter"
 	e_cost = 1
 
-/obj/item/ammo_casing/energy/laser/lasgun
-	projectile_type = /obj/item/projectile/beam/lasgun
-	e_cost = 50
-	fire_sound = 'sound/weapons/laser3.ogg'
+/obj/item/ammo_casing/lasgun/pistol
+	desc = "ERMAHGAWD IF YOU SEES THIS REPORT TO ADMOON!"
+	caliber = "laser"
+	projectile_type = /obj/item/projectile/beam/lasgun/pistol
