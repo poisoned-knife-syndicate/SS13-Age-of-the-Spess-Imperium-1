@@ -391,13 +391,14 @@ Lord Inquisitor Armor
 	astartes = 0 //Can't add apothecary / tech overlays
 
 /obj/item/clothing/suit/armor/bpimperialarmor
-	name = "Armor"
-	desc = "Imperial guard armor, still covered with the blood of the Imperial guard it was taken from."
-	icon_state = "bpimperialarmor"
-	item_state = "bpimperialarmor"
+	name = "guardsman armor"
+	desc = "Standard issue armor given to Guardsmen of the Imperial Guard. Protects against some damage."
+	icon_state = "guardsman_armor"
+	item_state = "guardsman_armor"
 	blood_overlay_type = "armor"
-	body_parts_covered = CHEST|ARMS|GROIN
-	armor = list(melee = 55, bullet = 35, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
+	body_parts_covered = CHEST|GROIN
+	armor = list(melee = 30, bullet = 10, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
 
 /obj/item/clothing/suit/armor/bpimperialarmor2
 	name = "Armor"

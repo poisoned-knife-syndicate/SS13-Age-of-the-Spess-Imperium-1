@@ -175,16 +175,12 @@ imperial class helment
 
 /obj/item/clothing/head/imperialhelmet
 	name = "Imperial Flak Helmet"
-	desc = "Standard Imperial Guard Helmet"
-	icon_state = "imperialhelmet"
+	desc = "Standard issue helmet given to Guardsmen of the Imperial Guard. Protects against some damage"
+	icon_state = "guardsman_helmet"
 	flags = HEADCOVERSEYES
-	item_state = "imperialhelmet"
-	armor = list(melee = 55, bullet = 30, laser = 50,energy = 10, bomb = 25, bio = 0, rad = 0)
+	item_state = "guardsman_helmet"
+	armor = list(melee = 30, bullet = 10, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
-	cold_protection = HEAD
-	min_cold_protection_temperature = HELMET_MIN_TEMP_PROTECT
-	heat_protection = HEAD
-	max_heat_protection_temperature = HELMET_MAX_TEMP_PROTECT
 
 /obj/item/clothing/head/imperialhelmet/reinforced
 	name = "Reinforced Imperial Flak Helmet"
