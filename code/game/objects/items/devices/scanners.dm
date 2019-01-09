@@ -167,6 +167,13 @@ Hdetector
 			usr << "The scanner no longer shows limb damage."
 
 
+/obj/item/device/healthanalyzer/guardsman
+	name = "portable diagnostor"
+	icon_state = "diagnostor"
+	item_state = "analyzer"
+	desc = "A hand-held Diagnostor able to distinguish vital signs of a patient. Typically issued to Guardsmen Medics of the Imperial Guard."
+
+
 /obj/item/device/analyzer
 	desc = "A hand-held environmental scanner which reports current gas levels."
 	name = "analyzer"

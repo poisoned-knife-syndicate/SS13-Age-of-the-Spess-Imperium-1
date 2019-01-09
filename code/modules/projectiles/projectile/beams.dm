@@ -127,3 +127,6 @@
 
 /obj/item/projectile/beam/lasgun
 	damage = 30
+
+/obj/item/projectile/beam/lasgun/pistol
+	damage = 25
