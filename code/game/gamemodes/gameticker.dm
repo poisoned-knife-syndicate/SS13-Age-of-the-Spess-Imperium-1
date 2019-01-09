@@ -31,7 +31,6 @@ var/round_start_time = 0
 
 /datum/controller/gameticker/proc/pregame()
 
-	login_music = pickweight(list('sound/ambience/title2.ogg' = 99, 'sound/ambience/title2.ogg' = 1)) // choose title music!
 	for(var/client/C in clients)
 		C.playtitlemusic()
 

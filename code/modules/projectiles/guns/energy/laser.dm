@@ -174,3 +174,11 @@ obj/item/weapon/gun/energy/laser/retro
 Fully Automatic
 */
 
+
+
+/obj/item/weapon/gun/energy/laser/lasgun
+	name = "lasgun"
+	desc = "Standard issue weapon used by Guardsmen of the Imperial Guard."
+	icon_state = "xray"
+	origin_tech = "combat=5;materials=3;magnets=2;syndicate=2"
+	ammo_type = list(/obj/item/ammo_casing/energy/xray)
