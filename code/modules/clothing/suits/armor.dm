@@ -438,6 +438,16 @@ Lord Inquisitor Armor
 	armor = list(melee = 40, bullet = 20, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
 	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
 
+/obj/item/clothing/suit/armor/imperialarmor/leader
+	name = "guardsman sergeant armor"
+	desc = "Standard issue armor given to Guardsmen Sergeants of the Imperial Guard. More resistant to heavy fire than the normal variant"
+	icon_state = "guardsmanleader_armor"
+	item_state = "guardsmanleader_armor"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN
+	armor = list(melee = 40, bullet = 40, laser = 40,energy = 30, bomb = 35, bio = 0, rad = 0)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
+
 /obj/item/clothing/suit/armor/imperialarmor/reinforced
 	name = "Reinforced Flak Armor"
 	desc = "Imperial guard flak armor. It looks very heavily padded."

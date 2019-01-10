@@ -66,60 +66,6 @@ Head of Shitcurity
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/l6_saw(H), slot_r_hand)
 
 /*
-Warden
-*/
-/datum/job/warden
-	title = "Sergeant"
-	flag = WARDEN
-	department_head = list("Comissar")
-	department_flag = ENGSEC
-	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "Commissar"
-	selection_color = "#ffeeee"
-	minimal_player_age = 7
-
-	default_pda = /obj/item/device/pda/warden
-	default_headset = /obj/item/device/radio/headset/headset_sec
-	default_backpack = /obj/item/weapon/storage/backpack/security
-	default_satchel = /obj/item/weapon/storage/backpack/satchel_sec
-
-	access = list(access_security, access_sec_doors, access_brig, access_armory, access_court, access_maint_tunnels, access_morgue)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_armory, access_court) //See /datum/job/warden/get_access()
-
-/datum/job/warden/equip_items(var/mob/living/carbon/human/H)
-	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
-	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/warden(H), slot_w_uniform)
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/imperialboots(H), slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/warden(H), slot_wear_suit)
-	H.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/warden(H), slot_head)
-	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
-	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/imperialbelt(H), slot_belt)
-	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/security/sunglasses(H), slot_glasses)
-	H.equip_to_slot_or_del(new /obj/item/device/flash(H), slot_l_store)
-
-	if(H.backbag == 1)
-		H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_l_hand)
-	else
-		H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_in_backpack)
-
-	spawn(10)
-		var/weaponchoice = input(H, "Select a weapon.","Weapon Selection") as null|anything in list("Guardsman's Sword", "Mercy Chainsword", "Hell Pistol")
-		switch(weaponchoice)
-			if("Guardsman's Sword")
-				H.equip_to_slot_or_del(new /obj/item/weapon/complexsword/IGsword(H), slot_r_hand)
-			if("Mercy Chainsword")
-				H.equip_to_slot_or_del(new /obj/item/weapon/twohanded/chainswordig(H), slot_r_hand)
-			if("Hell Pistol")
-				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/hellpistol(H), slot_r_hand)
-
-/datum/job/warden/get_access()
-	var/list/L = list()
-	L = ..() | check_config_for_sec_maint()
-	return L
-
-/*
 Detective
 */
 /datum/job/detective
@@ -128,8 +74,8 @@ Detective
 	department_head = list("Comissar")
 	department_flag = ENGSEC
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Adeptus Arbites"
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
@@ -301,3 +247,52 @@ Security Officer
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/imperialhelmet/vox(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun(H), slot_s_store)
 	H.equip_to_slot_or_del(new /obj/item/device/radio/voxcaster(H), slot_back)
+
+
+/*
+Warden
+*/
+/datum/job/warden
+	title = "Guardsman Sergeant"
+	flag = WARDEN
+	department_head = list("Comissar")
+	department_flag = ENGSEC
+	faction = "Station"
+	total_positions = 4
+	spawn_positions = 4
+	supervisors = "Commissar"
+	selection_color = "#ffeeee"
+	minimal_player_age = 0
+
+	access = list(access_security, access_sec_doors, access_brig, access_armory, access_court, access_maint_tunnels, access_morgue)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_armory, access_court) //See /datum/job/warden/get_access()
+
+/datum/job/warden/equip_items(var/mob/living/carbon/human/H)
+	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
+	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/imperialboots(H), slot_shoes)
+	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/imperialarmor/leader(H), slot_wear_suit)
+	H.equip_to_slot_or_del(new /obj/item/clothing/head/imperialhelmet/leader(H), slot_head)
+	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/imperialbelt(H), slot_belt)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun(H), slot_s_store)
+	if(H.backbag == 1)
+		H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_l_hand)
+	else
+		H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_in_backpack)
+
+	spawn(10)
+		var/weaponchoice = input(H, "Select a weapon.","Weapon Selection") as null|anything in list("Mercy Chainsword", "Hell Pistol", "Guardsman's Sword and Laspistol")
+		switch(weaponchoice)
+			if("Mercy Chainsword")
+				H.equip_to_slot_or_del(new /obj/item/weapon/twohanded/chainswordig(H), slot_r_hand)
+			if("Hell Pistol")
+				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/hellpistol(H), slot_r_hand)
+			if("Guardsman's Sword and Las Pistol")
+				H.equip_to_slot_or_del(new /obj/item/weapon/complexsword/IGsword(H), slot_r_hand)
+				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun/pistol(H), slot_l_hand)
+
+
+/datum/job/warden/get_access()
+	var/list/L = list()
+	L = ..() | check_config_for_sec_maint()
+	return L
