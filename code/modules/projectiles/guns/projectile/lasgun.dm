@@ -5,7 +5,7 @@ LASGUNS
 //Lasguns
 
 /obj/item/weapon/gun/projectile/automatic/lasgun
-	name = "Lasgun"
+	name = "M-Galaxy Pattern Lasgun"
 	desc = "Standard issue ranged weapon given to Guardsmen of the Imperial Guard."
 	icon_state = "lasgun"
 	item_state = "lasgun"
@@ -40,7 +40,7 @@ Adding a lascannon here because I would rather not make a new file for a simple 
 
 
 /obj/item/weapon/gun/projectile/automatic/lasgun/pistol
-	name = "Laspistol"
+	name = "Kantrael Pattern Laspistol"
 	desc = "A variant of the classic Lasgun primarily given to support roles within the Imperial Guard."
 	icon_state = "lasgunpistol"
 	item_state = "lasgunpistol"
