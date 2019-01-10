@@ -174,7 +174,7 @@ imperial class helment
 */
 
 /obj/item/clothing/head/imperialhelmet
-	name = "Imperial Flak Helmet"
+	name = "guardsman helmet"
 	desc = "Standard issue helmet given to Guardsmen of the Imperial Guard. Protects against some damage"
 	icon_state = "guardsman_helmet"
 	flags = HEADCOVERSEYES
@@ -183,12 +183,21 @@ imperial class helment
 	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/imperialhelmet/medic
-	name = "Imperial Medic Flak Helmet"
+	name = "guardsman medic elmet"
 	desc = "Standard issue helmet given to Guardsmen Medics of the Imperial Guard. Lighter than the normal variant"
 	icon_state = "guardsmanmedic_helmet"
 	flags = HEADCOVERSEYES
 	item_state = "guardsmanmedic_helmet"
 	armor = list(melee = 25, bullet = 10, laser = 25,energy = 10, bomb = 15, bio = 25, rad = 0) //In case of... Nurgle?
+	flags_inv = HIDEEARS
+
+/obj/item/clothing/head/imperialhelmet/vox
+	name = "guardsman vox caster helmet"
+	desc = "Standard issue helmet given to Guardsmen Vox Casters of the Imperial Guard. Slightly tougher than the normal variant"
+	icon_state = "guardsman_helmet"
+	flags = HEADCOVERSEYES
+	item_state = "guardsman_helmet"
+	armor = list(melee = 40, bullet = 20, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
 	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/imperialhelmet/reinforced

@@ -5,7 +5,7 @@ var/GLOBAL_RADIO_TYPE = 1 // radio type to use
 
 /obj/item/device/radio
 	icon = 'icons/obj/radio.dmi'
-	name = "Vox Caster"
+	name = "Mini Vox Caster"
 	suffix = "\[3\]"
 	icon_state = "walkietalkie"
 	item_state = "walkietalkie"

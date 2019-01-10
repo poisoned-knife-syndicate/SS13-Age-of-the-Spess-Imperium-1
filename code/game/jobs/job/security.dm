@@ -271,3 +271,33 @@ Security Officer
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/imperialhelmet/medic(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun/pistol(H), slot_s_store)
 	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/medic/start(H), slot_belt)
+
+
+
+/datum/job/medic
+	title = "Imperial Guardsman Vox Operator"
+	flag = MEDIC
+	department_head = list("Comissar")
+	department_flag = ENGSEC
+	faction = "Station"
+	total_positions = 8
+	spawn_positions = 8
+	supervisors = "Commissar and your Platoon Sergeant."
+	selection_color = "#ffeeee"
+	minimal_player_age = 7
+
+	default_id = /obj/item/weapon/card/id/dogtag
+
+	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_court) //But see /datum/job/warden/get_access()
+
+/datum/job/officer/equip_items(var/mob/living/carbon/human/H)
+	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
+	assign_sec_to_department(H)
+
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/imperialboots(H), slot_shoes)
+	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
+	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/imperialarmor/vox(H), slot_wear_suit)
+	H.equip_to_slot_or_del(new /obj/item/clothing/head/imperialhelmet/vox(H), slot_head)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun(H), slot_s_store)
+	H.equip_to_slot_or_del(new /obj/item/device/radio/voxcaster(H), slot_back)

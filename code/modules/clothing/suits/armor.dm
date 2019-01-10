@@ -428,6 +428,16 @@ Lord Inquisitor Armor
 	armor = list(melee = 25, bullet = 10, laser = 25,energy = 10, bomb = 15, bio = 25, rad = 0) //In case of... Nurgle?
 	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
 
+/obj/item/clothing/suit/armor/imperialarmor/vox
+	name = "guardsman vox caster armor"
+	desc = "Standard issue armor given to Guardsmen Vox Casters of the Imperial Guard. Slightly tougher than the normal variant"
+	icon_state = "guardsman_armor"
+	item_state = "guardsman_armor"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN
+	armor = list(melee = 40, bullet = 20, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
+
 /obj/item/clothing/suit/armor/imperialarmor/reinforced
 	name = "Reinforced Flak Armor"
 	desc = "Imperial guard flak armor. It looks very heavily padded."
