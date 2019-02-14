@@ -314,3 +314,10 @@
 	caliber = "75"
 	max_ammo = 25
 	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/lasgunmagpistol
+	name = "Laspistol Mag"
+	icon_state = "lasgunmag"
+	ammo_type = /obj/item/ammo_casing/lasgun/pistol
+	caliber = "laser"
+	max_ammo = 80

@@ -393,8 +393,8 @@ Lord Inquisitor Armor
 /obj/item/clothing/suit/armor/bpimperialarmor
 	name = "Armor"
 	desc = "Imperial guard armor, still covered with the blood of the Imperial guard it was taken from."
-	icon_state = "bpimperialarmor"
-	item_state = "bpimperialarmor"
+	icon_state = "bpimperialarmor2"
+	item_state = "bpimperialarmor2"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|ARMS|GROIN
 	armor = list(melee = 55, bullet = 35, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
@@ -409,13 +409,44 @@ Lord Inquisitor Armor
 	armor = list(melee = 55, bullet = 35, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/imperialarmor
-	name = "Basic Flak Armor"
-	desc = "Imperial guard flak armor. It looks heavily padded."
-	icon_state = "imperialarmor"
-	item_state = "imperialarmor"
+	name = "guardsman armor"
+	desc = "Standard issue armor given to Guardsmen of the Imperial Guard. Protects against some damage."
+	icon_state = "guardsman_armor"
+	item_state = "guardsman_armor"
 	blood_overlay_type = "armor"
-	body_parts_covered = CHEST|ARMS|GROIN
-	armor = list(melee = 55, bullet = 35, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
+	body_parts_covered = CHEST|GROIN
+	armor = list(melee = 30, bullet = 10, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
+
+/obj/item/clothing/suit/armor/imperialarmor/medic
+	name = "guardsman medic armor"
+	desc = "Standard issue armor given to Guardsmen Medics of the Imperial Guard. Lighter than the normal variant."
+	icon_state = "guardsmanmedic_armor"
+	item_state = "guardsmanmedic_armor"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN
+	armor = list(melee = 25, bullet = 10, laser = 25,energy = 10, bomb = 15, bio = 25, rad = 0) //In case of... Nurgle?
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
+
+/obj/item/clothing/suit/armor/imperialarmor/vox
+	name = "guardsman vox caster armor"
+	desc = "Standard issue armor given to Guardsmen Vox Casters of the Imperial Guard. Slightly tougher than the normal variant"
+	icon_state = "guardsman_armor"
+	item_state = "guardsman_armor"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN
+	armor = list(melee = 40, bullet = 20, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
+
+/obj/item/clothing/suit/armor/imperialarmor/leader
+	name = "guardsman sergeant armor"
+	desc = "Standard issue armor given to Guardsmen Sergeants of the Imperial Guard. More resistant to heavy fire than the normal variant"
+	icon_state = "guardsmanleader_armor"
+	item_state = "guardsmanleader_armor"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN
+	armor = list(melee = 40, bullet = 40, laser = 40,energy = 30, bomb = 35, bio = 0, rad = 0)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
 
 /obj/item/clothing/suit/armor/imperialarmor/reinforced
 	name = "Reinforced Flak Armor"

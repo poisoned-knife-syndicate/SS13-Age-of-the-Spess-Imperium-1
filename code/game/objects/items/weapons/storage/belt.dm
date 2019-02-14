@@ -279,3 +279,37 @@
 	new /obj/item/ammo_box/magazine/bpistolmag(src)
 	new /obj/item/ammo_box/magazine/bpistolmag(src)
 	new /obj/item/ammo_box/magazine/bpistolmag(src)
+
+
+/obj/item/weapon/storage/belt/medic
+	name = "guardsman medic belt"
+	desc = "A standard issue belt given to Guardsmen Medics of the Imperial Guard. Designed to hold various medical supplies.."
+	icon_state = "guardsmanmedic_belt"
+	item_state = "guardsmanmedic_belt"
+	storage_slots = 7
+	can_hold = list(
+		/obj/item/device/healthanalyzer,
+		/obj/item/weapon/dnainjector,
+		/obj/item/weapon/reagent_containers/dropper,
+		/obj/item/weapon/reagent_containers/glass/beaker,
+		/obj/item/weapon/reagent_containers/glass/bottle,
+		/obj/item/weapon/reagent_containers/pill,
+		/obj/item/weapon/reagent_containers/syringe,
+		/obj/item/weapon/lighter/zippo,
+		/obj/item/weapon/storage/fancy/cigarettes,
+		/obj/item/weapon/storage/pill_bottle,
+		/obj/item/stack/medical,
+		/obj/item/device/flashlight/pen
+	)
+
+/obj/item/weapon/storage/belt/medic/start
+
+/obj/item/weapon/storage/belt/medic/start/New()
+	..()
+	new /obj/item/device/healthanalyzer/guardsman
+	new /obj/item/weapon/reagent_containers/syringe
+	new /obj/item/weapon/reagent_containers/glass/bottle/vial/bicaridine
+	new /obj/item/weapon/reagent_containers/glass/bottle/vial/kelotane
+	new /obj/item/weapon/reagent_containers/glass/bottle/vial/dylovene
+	new /obj/item/weapon/reagent_containers/glass/bottle/vial/inaprovaline
+	new /obj/item/weapon/reagent_containers/glass/bottle/vial/tramadol
