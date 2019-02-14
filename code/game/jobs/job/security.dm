@@ -220,7 +220,7 @@ Security Officer
 
 
 
-/datum/job/medic
+/datum/job/vox
 	title = "Imperial Guardsman Vox Operator"
 	flag = MEDIC
 	department_head = list("Comissar")
@@ -281,9 +281,9 @@ Warden
 		H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_in_backpack)
 
 	spawn(10)
-		var/weaponchoice = input(H, "Select a weapon.","Weapon Selection") as null|anything in list("Mercy Chainsword", "Hell Pistol", "Guardsman's Sword and Laspistol")
+		var/weaponchoice = input(H, "Select a weapon.","Weapon Selection") as null|anything in list("Chainsword", "Hell Pistol", "Guardsman's Sword and Laspistol")
 		switch(weaponchoice)
-			if("Mercy Chainsword")
+			if("Chainsword")
 				H.equip_to_slot_or_del(new /obj/item/weapon/twohanded/chainswordig(H), slot_r_hand)
 			if("Hell Pistol")
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/hellpistol(H), slot_r_hand)
