@@ -10,6 +10,9 @@
 
 
 /obj/machinery/lasloader/attackby(obj/item/O, mob/user)
+	if(istype(O ,/obj/item/ammo_box/magazine/lasgunmagpistol))
+		qdel(O)
+		new /obj/item/ammo_box/magazine/lasgunmagpistol(src)
 	if(istype(O ,/obj/item/ammo_box/magazine/lasgunmag))
 		qdel(O)
 		new /obj/item/ammo_box/magazine/lasgunmag(src)
