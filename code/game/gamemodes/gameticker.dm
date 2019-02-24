@@ -31,9 +31,9 @@ var/round_start_time = 0
 
 /datum/controller/gameticker/proc/pregame()
 
-	for(var/client/C in clients)
-		C.playtitlemusic()
-
+    login_music = pickweight(list('sound/ambience/force_c_theme.ogg' = 99, 'sound/ambience/force_c_theme.ogg' = 1)) // choose title music!
+    for(var/client/C in clients)
+	C.playtitlemusic()
 	do
 		if(config)
 			pregame_timeleft = config.lobby_countdown
