@@ -1,3 +1,8 @@
 <!-- Most valid html will work in here, excluding images. -->
 
 <h3>Spess Imperium</h3>
+
+Welcome to the server imperial or heretic.
+We're aiming to recreate the Archangel code into a team Deathmatch themed one,allowing you to fight either as an imperial guardsmen or heretic/xeno for victory over the battlefield,anything in the project is subject to change.For more information please head to our discord.
+
+Discord: https://discord.gg/vpmS3ZE
