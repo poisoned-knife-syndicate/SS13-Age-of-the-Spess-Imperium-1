@@ -28,12 +28,12 @@
 # +EVERYTHING (or +HOST or +ALL) = Simply gives you everything without having to type every flag
 
 
-Goose			= +Everything
+The Emperor		= +EVERYTHING
 
-Admin Director		= +Everything
-Partisan du Serveur 	= +ADMIN +BAN +REJUV +VAREDIT +SPAWN +SERVER +FUN +SOUND +DEBUG
-Admin			= +ADMIN +BAN +REJUV +VAREDIT +SPAWN +SERVER +FUN +SOUND
-Junior Admin            = +ADMIN +BAN +VAREDIT
-Coder			= +Everything
-Trial Staff  		= +ADMIN
-Secret Baker		= +Everything
+High Lord of Admins	= +EVERYTHING
+Inquisittion	 	= +ADMIN +BAN +REJUV +VAREDIT +SPAWN +SERVER +FUN +SOUND +DEBUG
+Apdeptus Admin		= +ADMIN +BAN +REJUV +VAREDIT +SPAWN +SERVER +FUN +SOUND
+Adeptus Mod	        = +ADMIN +BAN +VAREDIT
+Adeptus Mechanicus	= +ADMIN +BAN +DEBUG +SPAWN +SOUND +VAREDIT +SERVER +BUILD +REJUV +STEALTH
+Imperial Staff  	= +ADMIN
+

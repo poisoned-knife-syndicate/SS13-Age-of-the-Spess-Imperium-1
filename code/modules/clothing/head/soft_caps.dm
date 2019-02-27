@@ -91,8 +91,8 @@
 	icon_state = "secsoft"
 	item_color = "sec"
 
-/obj/item/clothing/head/soft/orkhat
-	name = "Ork hat"
-	desc = "Best I could loot. Don't look at me"
-	icon_state = "orkhat"
-	item_color = "orkhat"
+//obj/item/clothing/head/soft/orkhat//
+	//name = "Ork hat"//
+	//desc = "Best I could loot. Don't look at me"//
+	//icon_state = "orkhat"//
+	//item_color = "orkhat"//
