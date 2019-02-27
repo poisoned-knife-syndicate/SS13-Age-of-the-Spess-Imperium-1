@@ -22,10 +22,10 @@
 	equip_to_slot_or_del(new /obj/item/clothing/shoes/ork, slot_shoes)
 	equip_to_slot_or_del(new /obj/item/clothing/under/rank/ork/under, slot_w_uniform)
 	equip_to_slot_or_del(new /obj/item/clothing/gloves/ork, slot_gloves)
-	equip_to_slot_or_del(new /obj/item/clothing/head/soft/orkhat, slot_head)
+	//equip_to_slot_or_del(new /obj/item/clothing/head/soft/orkhat, slot_head)//
 	equip_to_slot_or_del(new /obj/item/weapon/taperoll, slot_r_hand) //I'm just gonna stuff this in here. He needs this.
 	//there should only be one warboss
-	playsound(loc, 'sound/voice/warboss.ogg', 75, 0)
+	playsound(loc, 'sound/voice/warboss.ogg','sound/voice/warboss2.ogg', 75, 0)
 	for(var/mob/living/carbon/human/ork/warboss/Q in living_mob_list)
 		if(Q == src)		continue
 		if(Q.stat == DEAD)	continue

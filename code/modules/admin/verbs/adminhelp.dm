@@ -104,7 +104,7 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 		if(invalid)
 			admin_number_decrease++
 		if(X.prefs.toggles & SOUND_ADMINHELP)
-			var/randomahelpsound = pick('sound/effects/adminhelp.ogg','sound/effects/adminhelp2.ogg', 'sound/effects/adminhelp3.ogg')
+			var/randomahelpsound = pick('sound/effects/adminhelp.ogg','sound/effects/adminhelp.ogg', 'sound/effects/adminhelp.ogg')
 			X << randomahelpsound
 		X << msg
 
