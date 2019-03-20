@@ -240,12 +240,12 @@ imperial class helment
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 
-/obj/item/clothing/head/comissar2
+/obj/item/clothing/head/comissarcap
 	name = "Comissar Cap"
 	desc = "An armored cap with the imperial insignia on it, symbolizing the authority of a Comissar."
-	icon_state = "comissar3"
+	icon_state = "comissarcap"
 	flags = HEADCOVERSEYES
-	item_state = "comissar2"
+	item_state = "comissarcap"
 	armor = list(melee = 75, bullet = 50, laser = 20,energy = 30, bomb = 35, bio = 100, rad = 95)
 	flags_inv = HEADCOVERSEYES|BLOCKHAIR
 	cold_protection = HEAD

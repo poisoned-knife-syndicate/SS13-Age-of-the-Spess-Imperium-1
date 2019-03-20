@@ -36,11 +36,11 @@
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 
-/obj/item/clothing/suit/armor/hos/comissar2
+/obj/item/clothing/suit/armor/hos/comissarcoat
 	name = "comissar coat"
 	desc = "A large coat with comissar stripes and heavy reinforcements."
-	icon_state = "comissar3"
-	item_state = "comissar2"
+	icon_state = "comissarcoat"
+	item_state = "comissarcoat"
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 50, rad = 50)
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	cold_protection = CHEST|GROIN|LEGS|ARMS
@@ -70,11 +70,11 @@
 	slowdown = 5
 	armor = list(melee = -100, bullet = -100, laser = -100, energy = -100, bomb = -100, bio = -100, rad = -100)
 
-/obj/item/clothing/suit/armor/lc
-	name = "Nice Coat"
+/obj/item/clothing/suit/armor/commanderarmor
+	name = "General Reinforced Coat"
 	desc = "An armored coat reinforced with ceramic plates and pauldrons to provide additional protection whilst still offering maximum mobility and flexibility. Issued only to the imperium's finest."
-	icon_state = "lccoat"
-	item_state = "lccoat"
+	icon_state = "commanderarmor"
+	item_state = "commanderarmor"
 	blood_overlay_type = "armor"
 	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
 	body_parts_covered = CHEST|ARMS|GROIN

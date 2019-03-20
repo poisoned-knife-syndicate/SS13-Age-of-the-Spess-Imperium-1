@@ -15,7 +15,7 @@ Head of Shitcurity
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Lord General"
+	supervisors = "the Regiment General"
 	selection_color = "#ffdddd"
 	req_admin_notify = 1
 	minimal_player_age = 14
@@ -39,9 +39,9 @@ Head of Shitcurity
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/det(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/swat/comissar2(H), slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/clothing/head/comissar2(H), slot_head)
+	H.equip_to_slot_or_del(new /obj/item/clothing/head/comissarcap(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/commissar(H), slot_gloves)
-	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/hos/comissar2(H), slot_wear_suit)
+	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/hos/comissarcoat(H), slot_wear_suit)
 	H.equip_to_slot_or_del(new /obj/item/weapon/melee/chainofcommand/cwhip(H), slot_in_backpack)
 	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/security/sunglasses(H), slot_glasses)
 	H.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/sechailer(H), slot_wear_mask)

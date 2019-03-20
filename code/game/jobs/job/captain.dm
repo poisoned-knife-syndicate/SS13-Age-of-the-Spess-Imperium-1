@@ -2,7 +2,7 @@
 Captain
 */
 /datum/job/captain
-	title = "Lord General"
+	title = "General"
 	flag = CAPTAIN
 	department_head = list("Centcom")
 	department_flag = ENGSEC
@@ -29,20 +29,15 @@ Captain
 	var/obj/item/clothing/under/U = new /obj/item/clothing/under/rank/captain(H)
 	U.attachTie(new /obj/item/clothing/tie/medal/gold/sealofpurity())
 	H.equip_to_slot_or_del(U, slot_w_uniform)
-	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/lc(H), slot_wear_suit)
+	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/commanderarmor(H), slot_wear_suit)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/imperialboots(H), slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/clothing/head/caphat(H), slot_head)
-	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses(H), slot_glasses)
 	H.equip_to_slot_or_del(new 	/obj/item/clothing/gloves/lordcommander(H), slot_gloves)
 
 	//Equip ID box & telebaton
 	if(H.backbag == 1)
-		H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/ids(H), slot_l_hand)
-	else
-		H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/ids(H.back), slot_in_backpack)
 		H.equip_to_slot_or_del(new /obj/item/weapon/melee/telebaton(H), slot_in_backpack)
 
-	world << "<b>[H.real_name] is the Imperial Commander!</b>"
+	world << "<b>[H.real_name] is the Regiment General!</b>"
 
 /datum/job/captain/get_access()
 	return get_all_accesses()
