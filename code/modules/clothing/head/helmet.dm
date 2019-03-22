@@ -219,9 +219,9 @@ imperial class helment
 /obj/item/clothing/head/DKhelmet
 	name = "Mark IX Helmet"
 	desc = "The standard-issue Mark IX helmet is made of plasteel and constructed to ensure a good fit around the gasmask; ventilation is provided through a top spine, which has its own internal filter to keep out biological and chemical agents."
-	icon_state = "khelmet"
+	icon_state = "krieghelm"
 	flags = HEADCOVERSEYES
-	item_state = "khelmet"
+	item_state = "krieghelm"
 	armor = list(melee = 55, bullet = 30, laser = 50,energy = 10, bomb = 25, bio = 90, rad = 90)
 	flags_inv = HEADCOVERSEYES|BLOCKHAIR
 	cold_protection = HEAD
