@@ -1,6 +1,8 @@
 /*
 Bartender
 */
+
+/*
 /datum/job/bartender
 	title = "Bartender"
 	flag = BARTENDER
@@ -53,6 +55,8 @@ Bartender
 /*
 Chef
 */
+
+/*
 /datum/job/chef
 	title = "Chef"
 	flag = CHEF
@@ -80,6 +84,8 @@ Chef
 /*
 Botanist
 */
+
+/*
 /datum/job/hydro
 	title = "Botanist"
 	flag = BOTANIST
@@ -108,6 +114,8 @@ Botanist
 /*
 Quartermaster
 */
+
+/*
 /datum/job/qm
 	title = "Quartermaster"
 	flag = QUARTERMASTER
@@ -136,6 +144,8 @@ Quartermaster
 /*
 Cargo Technician
 */
+
+/*
 /datum/job/cargo_tech
 	title = "Cargo Technician"
 	flag = CARGOTECH
@@ -162,6 +172,8 @@ Cargo Technician
 /*
 Shaft Miner
 */
+
+/*
 /datum/job/mining
 	title = "Shaft Miner"
 	flag = MINER
@@ -200,6 +212,8 @@ Shaft Miner
 /*
 Celebrity
 */
+
+/*
 /datum/job/celebrity
 	title = "Celebrity"
 	flag = CELEBRITY
@@ -235,6 +249,8 @@ Celebrity
 /*
 Mime
 */
+
+/*
 /datum/job/mime
 	title = "Mime"
 	flag = MIME
@@ -278,9 +294,12 @@ Mime
 
 	H.rename_self("mime")
 
+
 /*
 Janitor
 */
+
+/*
 /datum/job/janitor
 	title = "Janitor"
 	flag = JANITOR
@@ -306,6 +325,7 @@ Janitor
 /*
 Librarian
 */
+/*
 /datum/job/librarian
 	title = "Librarian"
 	flag = LIBRARIAN
@@ -332,6 +352,8 @@ Librarian
 /*
 Inquisitor
 */
+
+/*
 /datum/job/lawyer
 	title = "Inquisitor"
 	flag = LAWYER
@@ -396,7 +418,7 @@ Inquisitor
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/inferno(H), slot_r_hand)
 			if("Stubber Pistol")
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/pistol(H), slot_r_hand)
-
+/*
 
 //--Eldar Spy--
 

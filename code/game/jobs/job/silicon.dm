@@ -25,6 +25,8 @@ AI
 /*
 Cyborg
 */
+
+/*
 /datum/job/cyborg
 	title = "Servitor"
 	flag = CYBORG

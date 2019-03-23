@@ -1,6 +1,8 @@
 /*
 Chief Engineer
 */
+
+
 /datum/job/chief_engineer
 	title = "Magos"
 	flag = CHIEF
@@ -48,7 +50,7 @@ Chief Engineer
 Station Engineer
 */
 /datum/job/engineer
-	title = "Explorator"
+	title = "Techpriest"
 	flag = ENGINEER
 	department_head = list("Magos")
 	department_flag = ENGSEC

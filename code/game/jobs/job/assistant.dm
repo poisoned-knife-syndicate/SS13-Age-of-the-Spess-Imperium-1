@@ -1,6 +1,8 @@
 /*
 Assistant
 */
+
+/*
 /datum/job/assistant
 	title = "Civilian Penitent"
 	flag = ASSISTANT
@@ -27,3 +29,4 @@ Assistant
 		. |= list(access_maint_tunnels)
 	else
 		return ..()
+/*

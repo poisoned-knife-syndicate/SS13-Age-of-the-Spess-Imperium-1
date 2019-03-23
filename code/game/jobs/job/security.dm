@@ -66,6 +66,8 @@ Head of Shitcurity
 /*
 Detective
 */
+
+/*
 /datum/job/detective
 	title = "Enforcer"
 	flag = DETECTIVE
@@ -122,6 +124,8 @@ Detective
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/shotgun/combat/voxlegis(H), slot_r_hand)
 			if("Lasgun (Fully Equipped)")
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun(H), slot_r_hand)
+*/
+
 
 /*
 Security Officer
