@@ -1,8 +1,6 @@
 /*
 Research Director
 */
-
-/*
 /datum/job/rd
 	title = "Lord Inquisitor, Ordo Xenos"
 	flag = RD

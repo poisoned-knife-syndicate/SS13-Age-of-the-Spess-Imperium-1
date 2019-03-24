@@ -1,8 +1,6 @@
 /*
 Chief Medical Officer
 */
-
-/*
 /datum/job/cmo
 	title = "Sister Hospitaller"
 	flag = CMO
@@ -48,12 +46,10 @@ Chief Medical Officer
 	if(H.backbag != 1)
 		H.equip_to_slot_or_del(new /obj/item/weapon/paper/hospitalar(H), slot_in_backpack)
 	H.rename_self("first_female")
-*/
 
 /*
 Medical Doctor
 */
-
 /datum/job/doctor
 	title = "Trauma Medicus"
 	flag = DOCTOR
@@ -89,8 +85,6 @@ Medical Doctor
 /*
 Chemist
 */
-
-/*
 /datum/job/chemist
 	title = "Pharmacologist"
 	flag = CHEMIST
