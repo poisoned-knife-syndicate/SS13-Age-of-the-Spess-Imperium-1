@@ -392,6 +392,7 @@ Eldar PSword
 	name = "Power Sword"
 	desc = "A munitorium pattern power sword."
 	icon_state = "powersword_off"
+	item_state = "claymore"
 	icon_on = "powersword_on"
 	icon_off = "powersword_off"
 	switchsound = 'sound/effects/phasein.ogg'
