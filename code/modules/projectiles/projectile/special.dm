@@ -86,10 +86,6 @@
 	trace_residue = "Unfocused charring patterns."
 	piercing = 10
 	woundtype = /datum/wound/melt
-	
-	obj/item/projectile/temp/melta/New()
-	spawn(3.5)
-		qdel(src)
 
 /obj/item/projectile/temp/melta/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon))

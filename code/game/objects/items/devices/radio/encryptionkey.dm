@@ -36,14 +36,14 @@
 	name = "mechanicus encryption key"
 	desc = "An encryption key for a radio headset.  To access the engineering channel, use :e."
 	icon_state = "eng_cypherkey"
-	translate_binary = 1
+	translate_binary = 0
 	channels = list("Engineering" = 1)
 
 /obj/item/device/encryptionkey/headset_rob
 	name = "robotics radio encryption key"
 	desc = "An encryption key for a radio headset.  To access the engineering channel, use :e. For research, use :n."
 	icon_state = "rob_cypherkey"
-	translate_binary = 1
+	translate_binary = 0
 	channels = list("Science" = 1, "Engineering" = 1)
 
 /obj/item/device/encryptionkey/headset_med
@@ -92,7 +92,7 @@
 	name = "\proper the Magos's encryption key"
 	desc = "An encryption key for a radio headset.  To access the engineering channel, use :e. For command, use :c."
 	icon_state = "ce_cypherkey"
-	translate_binary = 1
+	translate_binary = 0
 	channels = list("Engineering" = 1, "Command" = 1)
 
 /obj/item/device/encryptionkey/heads/cmo
