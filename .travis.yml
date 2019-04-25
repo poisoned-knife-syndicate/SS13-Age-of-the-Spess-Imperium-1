@@ -19,6 +19,7 @@ install:
 script:
   - DreamMaker GooseCode.dme
   - shopt -s globstar
+  #This is the best I can do, no step x and y until we have some form of pxmove if ever ya know?
   - (! grep 'step_[xy]' _maps/map_files/**/*.dmm)
 
 notifications:
