@@ -1,6 +1,8 @@
 # SS13-Age-of-the-Spess-Imperium
 
 Based off NTstation13
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium.svg)](http://isitmaintained.com/project/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium.svg)](http://isitmaintained.com/project/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium "Percentage of issues still open")
 
 **Discord** https://discord.gg/cWNrv4W
 
