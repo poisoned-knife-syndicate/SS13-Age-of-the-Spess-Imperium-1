@@ -1,10 +1,12 @@
+#This is the Travis CI Webhook shell script, in case you didn't know what you were looking at. 
+#You can customize most things below.
 #!/bin/bash
 
 if [ -z "$2" ]; then
   echo -e "WARNING!!\nYou need to pass the WEBHOOK_URL environment variable as the second argument to this script.\nFor details & guide, visit: https://github.com/DiscordHooks/travis-ci-discord-webhook" && exit
 fi
 
-echo -e "[Webhook]: Sending webhook to Discord...\\n";
+echo -e "[Webhook]: Sending webhook to Discord uwu...\\n";
 
 case $1 in
   "success" )
@@ -46,7 +48,7 @@ fi
 TIMESTAMP=$(date --utc +%FT%TZ)
 WEBHOOK_DATA='{
   "username": "",
-  "avatar_url": "https://travis-ci.org/images/logos/TravisCI-Mascot-1.png",
+  "avatar_url": "",
   "embeds": [ {
     "color": '$EMBED_COLOR',
     "author": {
