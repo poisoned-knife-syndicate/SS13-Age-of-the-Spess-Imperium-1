@@ -12,19 +12,16 @@ case $1 in
   "success" )
     EMBED_COLOR=3066993
     STATUS_MESSAGE="WAAAAAGH!"
-    AVATAR=""
     ;;
 
   "failure" )
     EMBED_COLOR=15158332
     STATUS_MESSAGE="'DIS BUILD FAILED YA DUMB GIT"
-    AVATAR=""
     ;;
 
   * )
     EMBED_COLOR=0
     STATUS_MESSAGE="Status Unknown"
-    AVATAR=""
     ;;
 esac
 
@@ -52,7 +49,7 @@ WEBHOOK_DATA='{
   "embeds": [ {
     "color": '$EMBED_COLOR',
     "author": {
-      "name": "Job #'"$TRAVIS_JOB_NUMBER"' (Build #'"$TRAVIS_BUILD_NUMBER"') '"$STATUS_MESSAGE"',
+      "name": "Job #'"$TRAVIS_JOB_NUMBER"' (Build #'"$TRAVIS_BUILD_NUMBER"') '"$STATUS_MESSAGE"'",
       "url": "'"$TRAVIS_BUILD_WEB_URL"'",
       "icon_url": "'$AVATAR'"
     },
