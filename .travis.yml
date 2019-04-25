@@ -25,4 +25,4 @@ script:
   - (! grep 'step_[xy]' _maps/**/*.dmm)
 
 notifications:
-  webhooks: 
+  email: false
