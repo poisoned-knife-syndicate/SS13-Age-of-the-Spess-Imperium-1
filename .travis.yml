@@ -2,6 +2,7 @@
 #thats still relevant, for now we will be el generico: the shitcode
 #do not copy and paste the travis stuff from newer stations without thought, you will include many things we do not use.
 #along with that, the shell scripts are agpl.
+#The Travis CI webhook is in here too, you can edit the layout of what goes into the webhook in send.sh on the master.
 language: generic
 dist: xenial
 
