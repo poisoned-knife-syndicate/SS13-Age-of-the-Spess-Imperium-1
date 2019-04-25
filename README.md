@@ -1,5 +1,7 @@
 # SS13-Age-of-the-Spess-Imperium
 
+Based off NTstation13
+
                                        XOOX
                                       Xc..cX
                                      Nl    lN
