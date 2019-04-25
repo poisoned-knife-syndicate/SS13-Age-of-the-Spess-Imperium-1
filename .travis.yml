@@ -1,5 +1,6 @@
 #pretending we're C because otherwise ruby/rvm will initialize, even with "language: dm".
-language: dm
+#thats still relevant, for now we will be el generico: the shitcode
+language: generic
 
 env:
   BYOND_MAJOR="512"
