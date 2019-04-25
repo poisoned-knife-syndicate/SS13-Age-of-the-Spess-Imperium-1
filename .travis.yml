@@ -18,6 +18,9 @@ install:
 
 script:
   - DreamMaker GooseCode.dme
+  - shopt -s globstar
+  - (! grep 'step_[xy]' maps/**/*.dmm)
+  - (! grep "runtime error:" log.txt)
 
 notifications:
   webhooks: 
