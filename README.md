@@ -45,3 +45,5 @@
                                       Wk::kW
                                        WNNW  
 				       
+#LICENSE
+All code is under a GNU GPL v3 license (http://www.gnu.org/licenses/gpl.html), including tools unless their readme specifies otherwise. All content including icons and sound is under a Creative Commons 3.0 BY-NC-SA license (https://creativecommons.org/licenses/by-nc-sa/3.0/).
