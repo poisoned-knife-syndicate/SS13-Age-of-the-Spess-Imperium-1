@@ -9,6 +9,7 @@ env:
   name="Cursory Map and Compile"
   BYOND_MAJOR="512"
   BYOND_MINOR="1466"
+  #The Travis CI Webhook
   WEBHOOK_URL="https://discordapp.com/api/webhooks/570845853263200276/i7AssPl_0pFp5QW1K6c9NlW_AbUDpLPNUrQdgY3zhYwWFnVc7tUSOo-xS8YwBstMS4OT"
 
 before_install:
@@ -26,14 +27,16 @@ script:
   - DreamMaker GooseCode.dme
   #This is the best I can do, no step x and y until we have some form of pxmove if ever ya know?
   - (! grep 'step_[xy]' _maps/**/*.dmm)
-  
+
+#The things below get the send.sh shell script from our github, you can alter the formatting n such in there. 
+#Then it sends it to the webhook url above and displays in discord.
 after_success:
-  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - wget https://raw.githubusercontent.com/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium/master/send.sh
   - chmod +x send.sh
   - ./send.sh success $WEBHOOK_URL
   
 after_failure:
-  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - wget https://raw.githubusercontent.com/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium/master/send.sh
   - chmod +x send.sh
   - ./send.sh failure $WEBHOOK_URL
 
