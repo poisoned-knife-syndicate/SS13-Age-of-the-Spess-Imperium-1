@@ -12,16 +12,19 @@ case $1 in
   "success" )
     EMBED_COLOR=3066993
     STATUS_MESSAGE="WAAAAAGH!"
+    AVATAR="https://raw.githubusercontent.com/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium/master/pass.png"
     ;;
 
   "failure" )
     EMBED_COLOR=15158332
     STATUS_MESSAGE="'DIS BUILD FAILED YA DUMB GIT"
+    AVATAR="https://raw.githubusercontent.com/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium/master/fail.png"
     ;;
 
   * )
     EMBED_COLOR=0
-    STATUS_MESSAGE="Status Unknown"
+    STATUS_MESSAGE="AND WOT IS 'DIS"
+    AVATAR="https://raw.githubusercontent.com/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium/master/unsure.png"
     ;;
 esac
 
