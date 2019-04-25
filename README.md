@@ -1,6 +1,6 @@
 # SS13-Age-of-the-Spess-Imperium
 
-# Based off NTstation13
+ Based off NTstation13
 
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium.svg)](http://isitmaintained.com/project/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium "Average time to resolve an issue")
 
