@@ -25,6 +25,16 @@ script:
   - DreamMaker GooseCode.dme
   #This is the best I can do, no step x and y until we have some form of pxmove if ever ya know?
   - (! grep 'step_[xy]' _maps/**/*.dmm)
+  
+after_success:
+  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh success $https://discordapp.com/api/webhooks/570845853263200276/i7AssPl_0pFp5QW1K6c9NlW_AbUDpLPNUrQdgY3zhYwWFnVc7tUSOo-xS8YwBstMS4OT
+  
+after_failure:
+  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh failure $https://discordapp.com/api/webhooks/570845853263200276/i7AssPl_0pFp5QW1K6c9NlW_AbUDpLPNUrQdgY3zhYwWFnVc7tUSOo-xS8YwBstMS4OT
 
 notifications:
   email: false
