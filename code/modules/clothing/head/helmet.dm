@@ -240,9 +240,9 @@ imperial class helment
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 
-/obj/item/clothing/head/comissarcap
-	name = "Comissar Cap"
-	desc = "An armored cap with the imperial insignia on it, symbolizing the authority of a Comissar."
+/obj/item/clothing/head/commissarcap
+	name = "Commissar Cap"
+	desc = "An armored cap with the imperial insignia on it, symbolizing the authority of a Commissar."
 	icon_state = "comissarcap"
 	flags = HEADCOVERSEYES
 	item_state = "comissarcap"
@@ -278,6 +278,20 @@ Power Armor Class Helmet
 	icon_state = "um_helm"
 	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR|!CANSTUN|!CANWEAKEN
 	item_state = "um_helm"
+	armor = list(melee = 70, bullet = 75, laser = 60, energy = 100, bomb = 55, bio = 55, rad = 95)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	flash_protect = 1
+
+/obj/item/clothing/head/helmet/BRhelmet
+	name = "Blood Raven Helmet"
+	desc = "To 'Inspect' lost relics and reclaim them for the chapter."
+	icon_state = "raven_helmet"
+	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR|!CANSTUN|!CANWEAKEN
+	item_state = "raven_helmet"
 	armor = list(melee = 70, bullet = 75, laser = 60, energy = 100, bomb = 55, bio = 55, rad = 95)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
 	cold_protection = HEAD

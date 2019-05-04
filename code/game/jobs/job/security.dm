@@ -39,7 +39,7 @@ Head of Shitcurity
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/det(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/swat/comissar2(H), slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/clothing/head/comissarcap(H), slot_head)
+	H.equip_to_slot_or_del(new /obj/item/clothing/head/commissarcap(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/commissar(H), slot_gloves)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/hos/comissarcoat(H), slot_wear_suit)
 	H.equip_to_slot_or_del(new /obj/item/weapon/melee/chainofcommand/cwhip(H), slot_in_backpack)

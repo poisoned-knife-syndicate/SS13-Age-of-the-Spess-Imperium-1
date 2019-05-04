@@ -85,6 +85,14 @@
 	volume = 800
 	flags = STOPSPRESSUREDMAGE|NODROP
 
+/obj/item/weapon/tank/oxygen/BRback
+	name = "Blood Raven Powersource"
+	desc = "A Blood Raven BATPACK"
+	icon_state = "raven-pack"
+	item_state = "raven-pack"
+	volume = 800
+	flags = STOPSPRESSUREDMAGE|NODROP
+
 /obj/item/weapon/tank/oxygen/KBback
 	name = "RAWR!!"
 	desc = "A Batpack FOR THE BLOOD GOD"
