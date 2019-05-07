@@ -5,4 +5,7 @@ w######################################################################
 # Ranks can be anything defined in admin_ranks.txt           ~Carn   #
 ######################################################################
 
+Scott45 = The Emperor
+Major Mike Tyson = The Emperor
+
 
