@@ -359,6 +359,13 @@ Lord Inquisitor Armor
 	item_state = "raven_cmdarmor"
 	armor = list(melee = 85, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95) //FOR THE CHAPTER.
 
+/obj/item/clothing/suit/armor/NMarmor
+	name = "Noise Marine Power Armor"
+	desc = "Lust, Greed, Temptation! This armour as symbols of chaos, mostly of Marks of Slaanesh carved and painted onto the power armor, it has pink, black and purple painted onto the armor, gold marks on the each arm and each leg, and one on the armor's chestplate. It makes you feel lustful."
+	icon_state = "chaos-noisearmor"
+	item_state = "chaos-noisearmor"
+	armor = list(melee = 85, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95) //THIS SOUND OFFENDS SLANNESH!!
+
 /obj/item/clothing/suit/armor/umpowerarmor/captain
 	name = "Ultra Marine Captain Power Armor"
 	desc = "Ultra Marine Captain Armor"

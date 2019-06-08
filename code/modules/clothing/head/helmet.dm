@@ -300,6 +300,20 @@ Power Armor Class Helmet
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	flash_protect = 1
 
+/obj/item/clothing/head/helmet/NMHelm
+	name = "Noise Marine Helmet"
+	desc = "The noise pleases Slaanesh's ears! This helmet has purple, pink, and black color on it with scratches and symbols of chaos put into it, the eyes glow green... You feel disgusting looking at it."
+	icon_state = "chaos-noisehelmet"
+	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR|!CANSTUN|!CANWEAKEN
+	item_state = "chaos-noisehelmet"
+	armor = list(melee = 70, bullet = 75, laser = 60, energy = 100, bomb = 55, bio = 55, rad = 95)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	flash_protect = 1
+
 /obj/item/clothing/head/helmet/umpowerhelmet/devastator
 	name = "Ultra Marine Devastator Helmet"
 	desc = "Headwear of the UltraMarines"
