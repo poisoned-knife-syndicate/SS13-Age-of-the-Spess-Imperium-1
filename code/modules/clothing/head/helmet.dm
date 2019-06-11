@@ -86,6 +86,13 @@
 	icon_state = "roman"
 	item_state = "roman"
 
+/obj/item/clothing/head/helmet/sgtheadset
+	name = "Sargeant headset"
+	desc = "A pair of tactical earphones that are tacticool and thus useful to distinguish a guardsman between a sargeant.."
+	armor = list(melee = 25, bullet = 0, laser = 25, energy = 10, bomb = 10, bio = 0, rad = 0)
+	icon_state = "headphones"
+	item_state = "headphones"
+
 /obj/item/clothing/head/helmet/roman/legionaire
 	name = "roman legionaire helmet"
 	desc = "An ancient helmet made of bronze and leather. Has a red crest on top of it."

@@ -270,7 +270,7 @@ Warden
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/imperialboots(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/imperialarmor/leader(H), slot_wear_suit)
-	H.equip_to_slot_or_del(new /obj/item/clothing/head/imperialhelmet/leader(H), slot_head)
+	H.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sgtheadset(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/imperialbelt(H), slot_belt)
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun(H), slot_s_store)
 	if(H.backbag == 1)
