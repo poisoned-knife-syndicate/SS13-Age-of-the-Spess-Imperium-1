@@ -286,6 +286,35 @@ Power Armor Class Helmet
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	flash_protect = 1
 
+/obj/item/clothing/head/helmet/WBhelmet
+	name = "World Bearer Helmet"
+	desc = "Headwear of the World Bearers."
+	icon_state = "chaos-helmet"
+	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR|!CANSTUN|!CANWEAKEN
+	item_state = "chaos-helmet"
+	armor = list(melee = 70, bullet = 75, laser = 60, energy = 100, bomb = 55, bio = 55, rad = 95)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	flash_protect = 1
+
+/obj/item/clothing/head/helmet/TMhelmet
+	name = "Blood Raven Terminator Helmet"
+	desc = "Tactical Dreadnought Armour, more commonly known as Terminator Armour, is an advanced form of powered armour developed for close-quarters melee fighting done by Space Marine Terminators, for whom slaying power is more important than maneuverability. These suits are primarily utilised in situations where standard Space Marine Power Armour does not provide enough protection for a warrior.."
+	icon_state = "raven-bighelm"
+	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR|!CANSTUN|!CANWEAKEN
+	item_state = "raven-bighelm"
+	armor = list(melee = 90, bullet = 95, laser = 80, energy = 100, bomb = 55, bio = 55, rad = 95)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	flash_protect = 1
+
+
 /obj/item/clothing/head/helmet/BRhelmet
 	name = "Blood Raven Helmet"
 	desc = "To 'Inspect' lost relics and reclaim them for the chapter."

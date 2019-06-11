@@ -352,6 +352,26 @@ Lord Inquisitor Armor
 	armor = list(melee = 80, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
 	astartes = 1
 
+/obj/item/clothing/suit/armor/TMpowerarmor
+	name = "Blood Raven Terminator Power Armor"
+	desc = "Tactical Dreadnought Armour, more commonly known as Terminator Armour, is an advanced form of powered armour developed for close-quarters melee fighting done by Space Marine Terminators, for whom slaying power is more important than maneuverability. These suits are primarily utilised in situations where standard Space Marine Power Armour does not provide enough protection for a warrior."
+	icon_state = "raven-bigarmor"
+	item_state = "raven-bigarmor"
+	w_class = 4//bulky item
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/gun/projectile/automatic/bolter)
+	flags = NODROP|THICKMATERIAL | STOPSPRESSUREDMAGE
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HANDS|CHEST|LEGS|FEET|ARMS|GROIN
+	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	blood_overlay_type = "armor"
+	slowdown = 1
+	armor = list(melee = 90, bullet = 90, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
+	astartes = 1
+
+
 /obj/item/clothing/suit/armor/borealum
 	name = "Blood Raven Commander Power Armor"
 	desc = "Tehre is noh time to beh lohst! Batul Brothas!"
@@ -359,12 +379,19 @@ Lord Inquisitor Armor
 	item_state = "raven_cmdarmor"
 	armor = list(melee = 85, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95) //FOR THE CHAPTER.
 
+/obj/item/clothing/suit/armor/WBpowerarmor
+	name = "World Bearer Power Armor"
+	desc = "A World Bearer Power armor."
+	icon_state = "chaos-armor"
+	item_state = "chaos-armor"
+	armor = list(melee = 85, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95)
+
 /obj/item/clothing/suit/armor/NMarmor
 	name = "Noise Marine Power Armor"
 	desc = "Lust, Greed, Temptation! This armour as symbols of chaos, mostly of Marks of Slaanesh carved and painted onto the power armor, it has pink, black and purple painted onto the armor, gold marks on the each arm and each leg, and one on the armor's chestplate. It makes you feel lustful."
 	icon_state = "chaos-noisearmor"
 	item_state = "chaos-noisearmor"
-	armor = list(melee = 85, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95) //THIS SOUND OFFENDS SLANNESH!!
+	armor = list(melee = 95, bullet = 70, laser = 60, energy = 100, bomb = 80, bio = 90, rad = 95) //THIS SOUND OFFENDS SLANNESH!!
 
 /obj/item/clothing/suit/armor/umpowerarmor/captain
 	name = "Ultra Marine Captain Power Armor"

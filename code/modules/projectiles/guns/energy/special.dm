@@ -140,6 +140,16 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler)
 	cell_type = "/obj/item/weapon/stock_parts/cell"
 
+// The Pinnacle of shitcode
+
+/obj/item/weapon/gun/energy/noisecannon
+	name = "Noise Cannon"
+	desc = "Its a noise cannon,imagine just getting hit by a soundwave at alarming speeds."
+	icon_state = "noisecannon"
+	item_state = null
+	ammo_type = (/obj/item/projectile/beam/noise)
+	cell_type = "/obj/item/weapon/stock_parts/cell/super"
+
 /*
 Plasma Gun
 */
