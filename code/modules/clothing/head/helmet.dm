@@ -86,6 +86,13 @@
 	icon_state = "roman"
 	item_state = "roman"
 
+/obj/item/clothing/head/helmet/sgtheadset
+	name = "Sargeant headset"
+	desc = "A pair of tactical earphones that are tacticool and thus useful to distinguish a guardsman between a sargeant.."
+	armor = list(melee = 25, bullet = 0, laser = 25, energy = 10, bomb = 10, bio = 0, rad = 0)
+	icon_state = "headphones"
+	item_state = "headphones"
+
 /obj/item/clothing/head/helmet/roman/legionaire
 	name = "roman legionaire helmet"
 	desc = "An ancient helmet made of bronze and leather. Has a red crest on top of it."
@@ -183,21 +190,12 @@ imperial class helment
 	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/imperialhelmet/medic
-	name = "guardsman medic elmet"
+	name = "guardsman medic helmet"
 	desc = "Standard issue helmet given to Guardsmen Medics of the Imperial Guard. Lighter than the normal variant"
 	icon_state = "guardsmanmedic_helmet"
 	flags = HEADCOVERSEYES|BLOCKHAIR
 	item_state = "guardsmanmedic_helmet"
 	armor = list(melee = 25, bullet = 10, laser = 25,energy = 10, bomb = 15, bio = 25, rad = 0) //In case of... Nurgle?
-	flags_inv = HIDEEARS
-
-/obj/item/clothing/head/imperialhelmet/vox
-	name = "guardsman vox caster helmet"
-	desc = "Standard issue helmet given to Guardsmen Vox Casters of the Imperial Guard. Slightly tougher than the normal variant"
-	icon_state = "guardsman_helmet"
-	flags = HEADCOVERSEYES|BLOCKHAIR
-	item_state = "guardsman_helmet"
-	armor = list(melee = 40, bullet = 20, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
 	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/imperialhelmet/leader
@@ -219,9 +217,9 @@ imperial class helment
 /obj/item/clothing/head/DKhelmet
 	name = "Mark IX Helmet"
 	desc = "The standard-issue Mark IX helmet is made of plasteel and constructed to ensure a good fit around the gasmask; ventilation is provided through a top spine, which has its own internal filter to keep out biological and chemical agents."
-	icon_state = "khelmet"
+	icon_state = "krieghelm"
 	flags = HEADCOVERSEYES
-	item_state = "khelmet"
+	item_state = "krieghelm"
 	armor = list(melee = 55, bullet = 30, laser = 50,energy = 10, bomb = 25, bio = 90, rad = 90)
 	flags_inv = HEADCOVERSEYES|BLOCKHAIR
 	cold_protection = HEAD
@@ -240,12 +238,12 @@ imperial class helment
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 
-/obj/item/clothing/head/comissar2
-	name = "Comissar Cap"
-	desc = "An armored cap with the imperial insignia on it, symbolizing the authority of a Comissar."
-	icon_state = "comissar3"
+/obj/item/clothing/head/commissarcap
+	name = "Commissar Cap"
+	desc = "An armored cap with the imperial insignia on it, symbolizing the authority of a Commissar."
+	icon_state = "comissarcap"
 	flags = HEADCOVERSEYES
-	item_state = "comissar2"
+	item_state = "comissarcap"
 	armor = list(melee = 75, bullet = 50, laser = 20,energy = 30, bomb = 35, bio = 100, rad = 95)
 	flags_inv = HEADCOVERSEYES|BLOCKHAIR
 	cold_protection = HEAD
@@ -278,6 +276,63 @@ Power Armor Class Helmet
 	icon_state = "um_helm"
 	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR|!CANSTUN|!CANWEAKEN
 	item_state = "um_helm"
+	armor = list(melee = 70, bullet = 75, laser = 60, energy = 100, bomb = 55, bio = 55, rad = 95)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	flash_protect = 1
+
+/obj/item/clothing/head/helmet/WBhelmet
+	name = "World Bearer Helmet"
+	desc = "Headwear of the World Bearers."
+	icon_state = "chaos-helmet"
+	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR|!CANSTUN|!CANWEAKEN
+	item_state = "chaos-helmet"
+	armor = list(melee = 70, bullet = 75, laser = 60, energy = 100, bomb = 55, bio = 55, rad = 95)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	flash_protect = 1
+
+/obj/item/clothing/head/helmet/TMhelmet
+	name = "Blood Raven Terminator Helmet"
+	desc = "Tactical Dreadnought Armour, more commonly known as Terminator Armour, is an advanced form of powered armour developed for close-quarters melee fighting done by Space Marine Terminators, for whom slaying power is more important than maneuverability. These suits are primarily utilised in situations where standard Space Marine Power Armour does not provide enough protection for a warrior.."
+	icon_state = "raven-bighelm"
+	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR|!CANSTUN|!CANWEAKEN
+	item_state = "raven-bighelm"
+	armor = list(melee = 90, bullet = 95, laser = 80, energy = 100, bomb = 55, bio = 55, rad = 95)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	flash_protect = 1
+
+
+/obj/item/clothing/head/helmet/BRhelmet
+	name = "Blood Raven Helmet"
+	desc = "To 'Inspect' lost relics and reclaim them for the chapter."
+	icon_state = "raven_helmet"
+	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR|!CANSTUN|!CANWEAKEN
+	item_state = "raven_helmet"
+	armor = list(melee = 70, bullet = 75, laser = 60, energy = 100, bomb = 55, bio = 55, rad = 95)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	flash_protect = 1
+
+/obj/item/clothing/head/helmet/NMHelm
+	name = "Noise Marine Helmet"
+	desc = "The noise pleases Slaanesh's ears! This helmet has purple, pink, and black color on it with scratches and symbols of chaos put into it, the eyes glow green... You feel disgusting looking at it."
+	icon_state = "chaos-noisehelmet"
+	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR|!CANSTUN|!CANWEAKEN
+	item_state = "chaos-noisehelmet"
 	armor = list(melee = 70, bullet = 75, laser = 60, energy = 100, bomb = 55, bio = 55, rad = 95)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
 	cold_protection = HEAD

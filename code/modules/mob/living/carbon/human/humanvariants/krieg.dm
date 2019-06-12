@@ -15,12 +15,8 @@
 	equip_to_slot_or_del(new /obj/item/clothing/suit/armor/DKcoat, slot_wear_suit)
 	equip_to_slot_or_del(new /obj/item/clothing/shoes/DK, slot_shoes)
 	equip_to_slot_or_del(new /obj/item/clothing/gloves/black, slot_gloves)
-	equip_to_slot_or_del(new /obj/item/clothing/mask/gas/sechailer/DK, slot_wear_mask)
 	equip_to_slot_or_del(new /obj/item/clothing/head/DKhelmet, slot_head)
-	equip_to_slot_or_del(new /obj/item/weapon/tank/emergency_oxygen/double/DK, slot_belt)
 	equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgunkreig, slot_r_hand)
-
-
 
 	var/rndname = "#([rand(53000, 100000)])"
 

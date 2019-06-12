@@ -391,9 +391,10 @@ Eldar PSword
 /obj/item/weapon/powersword/munitorium
 	name = "Power Sword"
 	desc = "A munitorium pattern power sword."
-	icon_state = "munitoriumpsword_off"
-	icon_on = "munitoriumpsword_on"
-	icon_off = "munitoriumpsword_off"
+	icon_state = "powersword_off"
+	item_state = "claymore"
+	icon_on = "powersword_on"
+	icon_off = "powersword_off"
 	switchsound = 'sound/effects/phasein.ogg'
 	force = 40.0
 	throwforce = 15

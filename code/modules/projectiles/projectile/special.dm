@@ -12,6 +12,19 @@
 		empulse(target, 1, 1)
 		return 1
 
+// I want to die and scream
+
+/obj/item/projectile/beam/noise
+	name = "sonic wave"
+	icon_state = "purple_laser"
+	trace_residue = null
+	damage_type = TOX/BRUTE
+	woundtype = null
+	on_hit(var/atom/target, var/blocked = 0)
+		if(ishuman(target))
+			var/mob/living/carbon/M = target
+			M.adjustBrainLoss(20)
+			M.hallucination += 20
 
 /obj/item/projectile/bullet/gyro
 	name = "Bolt"
@@ -218,6 +231,8 @@
 			var/mob/living/carbon/M = target
 			M.adjustBrainLoss(20)
 			M.hallucination += 20
+
+
 
 /obj/item/projectile/kinetic
 	name = "kinetic force"

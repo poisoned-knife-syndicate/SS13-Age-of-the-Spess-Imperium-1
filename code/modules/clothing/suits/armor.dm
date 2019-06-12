@@ -36,11 +36,11 @@
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 
-/obj/item/clothing/suit/armor/hos/comissar2
+/obj/item/clothing/suit/armor/hos/comissarcoat
 	name = "comissar coat"
 	desc = "A large coat with comissar stripes and heavy reinforcements."
-	icon_state = "comissar3"
-	item_state = "comissar2"
+	icon_state = "comissarcoat"
+	item_state = "comissarcoat"
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 50, rad = 50)
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	cold_protection = CHEST|GROIN|LEGS|ARMS
@@ -70,11 +70,11 @@
 	slowdown = 5
 	armor = list(melee = -100, bullet = -100, laser = -100, energy = -100, bomb = -100, bio = -100, rad = -100)
 
-/obj/item/clothing/suit/armor/lc
-	name = "Nice Coat"
+/obj/item/clothing/suit/armor/commanderarmor
+	name = "General Reinforced Coat"
 	desc = "An armored coat reinforced with ceramic plates and pauldrons to provide additional protection whilst still offering maximum mobility and flexibility. Issued only to the imperium's finest."
-	icon_state = "lccoat"
-	item_state = "lccoat"
+	icon_state = "commanderarmor"
+	item_state = "commanderarmor"
 	blood_overlay_type = "armor"
 	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
 	body_parts_covered = CHEST|ARMS|GROIN
@@ -333,6 +333,66 @@ Lord Inquisitor Armor
 	armor = list(melee = 80, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
 	astartes = 1
 
+/obj/item/clothing/suit/armor/BRpowerarmor
+	name = "Blood Raven Power Armor"
+	desc = "A heavy-looking chestplate painted in Blood Raven colors.If you look closely, you'd notice slight discoloration, as if it was hastily painted over"
+	icon_state = "raven_armor"
+	item_state = "raven_armor"
+	w_class = 4//bulky item
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/gun/projectile/automatic/bolter)
+	flags = NODROP|THICKMATERIAL | STOPSPRESSUREDMAGE
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HANDS|CHEST|LEGS|FEET|ARMS|GROIN
+	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	blood_overlay_type = "armor"
+	slowdown = 1
+	armor = list(melee = 80, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
+	astartes = 1
+
+/obj/item/clothing/suit/armor/TMpowerarmor
+	name = "Blood Raven Terminator Power Armor"
+	desc = "Tactical Dreadnought Armour, more commonly known as Terminator Armour, is an advanced form of powered armour developed for close-quarters melee fighting done by Space Marine Terminators, for whom slaying power is more important than maneuverability. These suits are primarily utilised in situations where standard Space Marine Power Armour does not provide enough protection for a warrior."
+	icon_state = "raven-bigarmor"
+	item_state = "raven-bigarmor"
+	w_class = 4//bulky item
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/gun/projectile/automatic/bolter)
+	flags = NODROP|THICKMATERIAL | STOPSPRESSUREDMAGE
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HANDS|CHEST|LEGS|FEET|ARMS|GROIN
+	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	blood_overlay_type = "armor"
+	slowdown = 1
+	armor = list(melee = 90, bullet = 90, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
+	astartes = 1
+
+
+/obj/item/clothing/suit/armor/borealum
+	name = "Blood Raven Commander Power Armor"
+	desc = "Tehre is noh time to beh lohst! Batul Brothas!"
+	icon_state = "raven_cmdarmor"
+	item_state = "raven_cmdarmor"
+	armor = list(melee = 85, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95) //FOR THE CHAPTER.
+
+/obj/item/clothing/suit/armor/WBpowerarmor
+	name = "World Bearer Power Armor"
+	desc = "A World Bearer Power armor."
+	icon_state = "chaos-armor"
+	item_state = "chaos-armor"
+	armor = list(melee = 85, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95)
+
+/obj/item/clothing/suit/armor/NMarmor
+	name = "Noise Marine Power Armor"
+	desc = "Lust, Greed, Temptation! This armour as symbols of chaos, mostly of Marks of Slaanesh carved and painted onto the power armor, it has pink, black and purple painted onto the armor, gold marks on the each arm and each leg, and one on the armor's chestplate. It makes you feel lustful."
+	icon_state = "chaos-noisearmor"
+	item_state = "chaos-noisearmor"
+	armor = list(melee = 95, bullet = 70, laser = 60, energy = 100, bomb = 80, bio = 90, rad = 95) //THIS SOUND OFFENDS SLANNESH!!
+
 /obj/item/clothing/suit/armor/umpowerarmor/captain
 	name = "Ultra Marine Captain Power Armor"
 	desc = "Ultra Marine Captain Armor"
@@ -428,16 +488,6 @@ Lord Inquisitor Armor
 	armor = list(melee = 25, bullet = 10, laser = 25,energy = 10, bomb = 15, bio = 25, rad = 0) //In case of... Nurgle?
 	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
 
-/obj/item/clothing/suit/armor/imperialarmor/vox
-	name = "guardsman vox caster armor"
-	desc = "Standard issue armor given to Guardsmen Vox Casters of the Imperial Guard. Slightly tougher than the normal variant"
-	icon_state = "guardsman_armor"
-	item_state = "guardsman_armor"
-	blood_overlay_type = "armor"
-	body_parts_covered = CHEST|GROIN
-	armor = list(melee = 40, bullet = 20, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
-	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
-
 /obj/item/clothing/suit/armor/imperialarmor/leader
 	name = "guardsman sergeant armor"
 	desc = "Standard issue armor given to Guardsmen Sergeants of the Imperial Guard. More resistant to heavy fire than the normal variant"
@@ -482,8 +532,8 @@ Lord Inquisitor Armor
 /obj/item/clothing/suit/armor/DKcoat
 	name = "Heavy Greatcoat"
 	desc = "The heavy greatcoat is the most distinctive part of the Death Korps uniform, a warm and waterproof coat made locally on Krieg of thick cloth in a variety of colours. Double-breasted with brass buttons, the greatcoat itself can provide limited protection. Plasteel shoulder pads are buckled to the greatcoat and embossed with rank insignia in the case of Watchmasters and higher ranks."
-	icon_state = "greatcoat"
-	item_state = "greatcoat"
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	armor = list(melee = 55, bullet = 35, laser = 55, energy = 15, bomb = 25, bio = 90, rad = 90)
@@ -631,6 +681,24 @@ Lord Inquisitor Armor
 	desc = "Chaos Power Armor"
 	icon_state = "1k_rubricarmor"
 	item_state = "1k_rubricarmor"
+	w_class = 4//bulky item
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/gun/projectile/automatic/bolter)
+	flags = NODROP|THICKMATERIAL | STOPSPRESSUREDMAGE
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HANDS|CHEST|LEGS|FEET|ARMS|GROIN
+	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	blood_overlay_type = "armor"
+	slowdown = 1
+	armor = list(melee = 80, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
+
+/obj/item/clothing/suit/armor/ELIPHAS
+	name = "World Bearer Lord Power Armor"
+	desc = "Such inspiring courage! Perhaps we'll mount your corpse on a golden chair and make an idol out of you as well."
+	icon_state = "chaos-cmdarmor"
+	item_state = "chaos-cmdarmor"
 	w_class = 4//bulky item
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/gun/projectile/automatic/bolter)

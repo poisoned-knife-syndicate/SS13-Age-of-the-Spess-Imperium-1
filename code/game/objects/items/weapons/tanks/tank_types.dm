@@ -85,6 +85,33 @@
 	volume = 800
 	flags = STOPSPRESSUREDMAGE|NODROP
 
+// NEW BATPACKS
+
+/obj/item/weapon/tank/oxygen/BRback
+	name = "Blood Raven Powersource"
+	desc = "A Blood Raven BATPACK"
+	icon_state = "raven-pack"
+	item_state = "raven-pack"
+	volume = 800
+	flags = STOPSPRESSUREDMAGE|NODROP
+
+/obj/item/weapon/tank/oxygen/NMback
+	name = "Noise Marine Powersource"
+	desc = "The quiet offends Slaanesh! The Power Pack now modifed with some speakers of sort, it has a slight pink to it. You feel like you could scream by looking at this..."
+	icon_state = "chaos-noisepack"
+	item_state = "chaos-noisepack"
+	volume = 800
+	flags = STOPSPRESSUREDMAGE|NODROP
+
+/obj/item/weapon/tank/oxygen/BRCback
+	name = "Blood Raven Commander Powersource"
+	desc = "A Blood Raven Commander BATPACK"
+	icon_state = "cdrraven-pack"
+	item_state = "cdrraven-pack"
+	volume = 800
+	flags = STOPSPRESSUREDMAGE|NODROP
+
+
 /obj/item/weapon/tank/oxygen/KBback
 	name = "RAWR!!"
 	desc = "A Batpack FOR THE BLOOD GOD"
