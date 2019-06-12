@@ -14,9 +14,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\lorn_v.dm"
-#include "_maps\metastation.dm"
 #include "_maps\map_files\LORN_V.dmm"
-#include "_maps\map_files\MetaStation.v39L.dmm"
 #include "code\_compile_options.dm"
 #include "code\hub.dm"
 #include "code\world.dm"
