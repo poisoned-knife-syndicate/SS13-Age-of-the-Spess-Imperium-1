@@ -213,7 +213,7 @@
 	icon_state = "[initial(icon_state)]-[round(ammo_count(),10)]"
 
 /obj/item/ammo_box/magazine/boltermag
-	name = "Sickle Magazine"
+	name = "Bolter Magazine"
 	icon_state = "sicklemag"
 	ammo_type = /obj/item/ammo_casing/caseless/a75
 	caliber = "75"
@@ -222,14 +222,14 @@
 
 /obj/item/ammo_box/magazine/bpistolmag
 	name = "Bolt Pistol Magazine"
-	icon_state = "sicklemag"
+	icon_state = "boltersmallmag"
 	ammo_type = /obj/item/ammo_casing/caseless/a75
 	caliber = "75"
 	max_ammo = 10
 	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/sluggamag
-	name = "Sickle Magazine"
+	name = "Slugga mag"
 	icon_state = "sicklemag"
 	ammo_type = /obj/item/ammo_casing/caseless/a74
 	caliber = "74"
@@ -260,7 +260,7 @@
 
 /obj/item/ammo_box/magazine/laspistolmag
 	name = "Laspistol Mag"
-	icon_state = "laspistolmag"
+	icon_state = "smallmag"
 	ammo_type = /obj/item/ammo_casing/lasgun
 	caliber = "laser"
 	max_ammo = 80
@@ -308,7 +308,7 @@
 	max_ammo = 10
 
 /obj/item/ammo_box/magazine/boltermag/inf
-	name = "Inferno Sickle Magazine"
+	name = "Inferno Bolter Magazine"
 	icon_state = "sicklemaginf"
 	ammo_type = /obj/item/ammo_casing/caseless/inferno
 	caliber = "75"
@@ -317,7 +317,7 @@
 
 /obj/item/ammo_box/magazine/lasgunmagpistol
 	name = "Laspistol Mag"
-	icon_state = "lasgunmag"
+	icon_state = "smallmag"
 	ammo_type = /obj/item/ammo_casing/lasgun/pistol
 	caliber = "laser"
 	max_ammo = 80

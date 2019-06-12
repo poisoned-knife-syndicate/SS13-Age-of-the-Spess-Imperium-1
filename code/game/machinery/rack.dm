@@ -106,7 +106,7 @@
 	name = "Laspistol rack"
 	desc = "It can hold four Laspistol."
 	icon_state = "pr_0"
-	holds_type = /obj/item/weapon/gun/projectile/automatic/laspistol
+	holds_type = /obj/item/weapon/gun/projectile/automatic/lasgun/kantrael
 	holds_name = "laspistol"
 	base_icon = "pr"
 

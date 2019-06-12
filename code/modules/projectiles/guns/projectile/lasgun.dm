@@ -39,11 +39,11 @@ Adding a lascannon here because I would rather not make a new file for a simple 
 	ejectcasing = 0 //Technically energy based! None of that!
 
 
-/obj/item/weapon/gun/projectile/automatic/lasgun/pistol
+/obj/item/weapon/gun/projectile/automatic/lasgun/kantrael
 	name = "Kantrael Pattern Laspistol"
 	desc = "A variant of the classic Lasgun primarily given to support roles within the Imperial Guard."
-	icon_state = "lasgunpistol"
-	item_state = "lasgunpistol"
+	icon_state = "kantrael"
+	item_state = "kantrael"
 	w_class = 3.0
 	origin_tech = "combat=5;materials=1;syndicate=2"
 	mag_type = /obj/item/ammo_box/magazine/lasgunmagpistol

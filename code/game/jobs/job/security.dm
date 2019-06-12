@@ -21,10 +21,9 @@ Head of Shitcurity
 	minimal_player_age = 14
 
 	default_id = /obj/item/weapon/card/id/silver
-	default_pda = /obj/item/device/pda/heads/hos
 	default_headset = /obj/item/device/radio/headset/heads/hos
-	default_backpack = /obj/item/weapon/storage/backpack/security
-	default_satchel = /obj/item/weapon/storage/backpack/satchel_sec
+	default_backpack = /obj/item/weapon/storage/backpack/impguard
+	default_satchel = /obj/item/weapon/storage/backpack/impguard
 
 	access = list(access_security, access_sec_doors, access_brig, access_armory, access_court,
 			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
@@ -40,7 +39,6 @@ Head of Shitcurity
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/det(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/swat/comissar2(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/commissarcap(H), slot_head)
-	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/commissar(H), slot_gloves)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/hos/comissarcoat(H), slot_wear_suit)
 	H.equip_to_slot_or_del(new /obj/item/weapon/melee/chainofcommand/cwhip(H), slot_in_backpack)
 	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/imperialbelt(H), slot_belt)
@@ -80,7 +78,7 @@ Detective
 
 	default_pda = /obj/item/device/pda/detective
 	default_headset = /obj/item/device/radio/headset/headset_sec
-	default_backpack = /obj/item/weapon/storage/backpack/security
+	default_backpack = /obj/item/weapon/storage/backpack/impguard
 	default_satchel = /obj/item/weapon/storage/backpack/satchel_sec
 
 	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_court, access_brig)
@@ -140,6 +138,7 @@ Security Officer
 	var/list/dep_access = null
 
 	default_id = /obj/item/weapon/card/id/dogtag
+	default_backpack = /obj/item/weapon/storage/backpack/impguard
 
 	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_court) //But see /datum/job/warden/get_access()
@@ -180,73 +179,6 @@ var/list/sec_departments = list("engineering", "supply", "medical", "science")
 				H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
 			if("science")
 				H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
-
-
-
-
-/*
-Security Officer
-*/
-/datum/job/medic
-	title = "Imperial Guardsman Medic"
-	flag = MEDIC
-	department_head = list("Comissar")
-	department_flag = ENGSEC
-	faction = "Station"
-	total_positions = 8
-	spawn_positions = 8
-	supervisors = "Commissar and your Platoon Sergeant."
-	selection_color = "#ffeeee"
-	minimal_player_age = 7
-	var/list/dep_access = null
-
-	default_id = /obj/item/weapon/card/id/dogtag
-
-	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_court) //But see /datum/job/warden/get_access()
-
-/datum/job/officer/equip_items(var/mob/living/carbon/human/H)
-	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
-	assign_sec_to_department(H)
-
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/imperialboots(H), slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
-	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/imperialarmor/medic(H), slot_wear_suit)
-	H.equip_to_slot_or_del(new /obj/item/clothing/head/imperialhelmet/medic(H), slot_head)
-	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun/pistol(H), slot_s_store)
-	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/medic/start(H), slot_belt)
-
-
-
-/datum/job/vox
-	title = "Imperial Guardsman Vox Operator"
-	flag = MEDIC
-	department_head = list("Comissar")
-	department_flag = ENGSEC
-	faction = "Station"
-	total_positions = 8
-	spawn_positions = 8
-	supervisors = "Commissar and your Platoon Sergeant."
-	selection_color = "#ffeeee"
-	minimal_player_age = 7
-
-	default_id = /obj/item/weapon/card/id/dogtag
-
-	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_court) //But see /datum/job/warden/get_access()
-
-/datum/job/officer/equip_items(var/mob/living/carbon/human/H)
-	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
-	assign_sec_to_department(H)
-
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/imperialboots(H), slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
-	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/imperialarmor/vox(H), slot_wear_suit)
-	H.equip_to_slot_or_del(new /obj/item/clothing/head/imperialhelmet/vox(H), slot_head)
-	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun(H), slot_s_store)
-	H.equip_to_slot_or_del(new /obj/item/device/radio/voxcaster(H), slot_back)
-
-
 /*
 Warden
 */
@@ -287,10 +219,11 @@ Warden
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/hellpistol(H), slot_r_hand)
 			if("Guardsman's Sword and Las Pistol")
 				H.equip_to_slot_or_del(new /obj/item/weapon/complexsword/IGsword(H), slot_r_hand)
-				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun/pistol(H), slot_l_hand)
+				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun/kantrael(H), slot_l_hand)
 
 
 /datum/job/warden/get_access()
 	var/list/L = list()
 	L = ..() | check_config_for_sec_maint()
 	return L
+
