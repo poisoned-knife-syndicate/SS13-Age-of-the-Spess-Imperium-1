@@ -2,9 +2,9 @@
 /*
 Chaplain
 */
-/datum/job/chaplain
+/datum/job/preacher
 	title = "Preacher"
-	flag = CHAPLAIN
+	flag = PREACHER
 	department_head = list("The Ecclesiarchy")
 	department_flag = CIVILIAN
 	faction = "Station"
@@ -19,7 +19,7 @@ Chaplain
 	minimal_access = list(access_morgue, access_chapel_office, access_crematorium)
 	assistant_access = list(access_chapel_office)
 
-/datum/job/chaplain/equip_items(var/mob/living/carbon/human/H)
+/datum/job/preacher/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/chaplain(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/black(H), slot_shoes)

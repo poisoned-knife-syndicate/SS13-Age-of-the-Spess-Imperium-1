@@ -78,7 +78,7 @@
 	src.icon_state = "[lasercolor]ed209[src.on]"
 	spawn(3)
 		src.botcard = new /obj/item/weapon/card/id(src)
-		var/datum/job/detective/J = new/datum/job/detective
+		var/datum/job/enforcer/J = new/datum/job/enforcer
 		src.botcard.access = J.get_access()
 
 		if(radio_controller)

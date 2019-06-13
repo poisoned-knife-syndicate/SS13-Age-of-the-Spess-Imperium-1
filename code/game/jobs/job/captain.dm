@@ -1,9 +1,9 @@
 /*
 Captain
 */
-/datum/job/captain
+/datum/job/general
 	title = "General"
-	flag = CAPTAIN
+	flag = GENERAL
 	department_head = list("Centcom")
 	department_flag = ENGSEC
 	faction = "Station"
@@ -23,7 +23,7 @@ Captain
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
 
-/datum/job/captain/equip_items(var/mob/living/carbon/human/H)
+/datum/job/general/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/promoteIG
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	var/obj/item/clothing/under/U = new /obj/item/clothing/under/rank/captain(H)
@@ -39,7 +39,7 @@ Captain
 
 	world << "<b>[H.real_name] is the Regiment General!</b>"
 
-/datum/job/captain/get_access()
+/datum/job/general/get_access()
 	return get_all_accesses()
 
 /*
@@ -107,9 +107,9 @@ LG promotion
 /*
 Head of Personnel
 */
-/datum/job/hop
+/datum/job/seneschal
 	title = "Seneschal"
-	flag = HOP
+	flag = SENESCHAL
 	department_head = list("Lord General")
 	department_flag = CIVILIAN
 	faction = "Station"
@@ -138,7 +138,7 @@ Head of Personnel
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_mineral_storeroom)
 
 
-/datum/job/hop/equip_items(var/mob/living/carbon/human/H)
+/datum/job/seneschal/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/head_of_personnel(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/hopboots(H), slot_shoes)

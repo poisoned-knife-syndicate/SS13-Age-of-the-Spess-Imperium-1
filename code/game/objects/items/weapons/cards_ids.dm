@@ -125,7 +125,7 @@ update_label("John Doe", "Clowny")
 	registered_name = "Imperial Citizen"
 	assignment = "Emergency Access Grant"
 	New()
-		var/datum/job/captain/J = new/datum/job/captain
+		var/datum/job/general/J = new/datum/job/general
 		access = J.get_access()
 		..()
 
@@ -203,7 +203,7 @@ update_label("John Doe", "Clowny")
 	registered_name = "Captain"
 	assignment = "Captain"
 	New()
-		var/datum/job/captain/J = new/datum/job/captain
+		var/datum/job/general/J = new/datum/job/general
 		access = J.get_access()
 		..()
 
@@ -215,7 +215,7 @@ update_label("John Doe", "Clowny")
 	registered_name = "General"
 	assignment = "Imperial Command"
 	New()
-		var/datum/job/captain/J = new/datum/job/captain
+		var/datum/job/general/J = new/datum/job/general
 		access = J.get_access()
 		..()
 
@@ -227,7 +227,7 @@ update_label("John Doe", "Clowny")
 	registered_name = "Inquisition"
 	assignment = "Ordo Hereticus"
 	New()
-		var/datum/job/captain/J = new/datum/job/captain
+		var/datum/job/general/J = new/datum/job/general
 		access = J.get_access()
 		..()
 		icon_state = pick("inquisitor", "inquisitor", "inquisitor2", "inquisitor3")

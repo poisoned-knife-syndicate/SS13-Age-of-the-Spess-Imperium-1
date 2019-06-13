@@ -7,9 +7,9 @@
 /*
 Head of Shitcurity
 */
-/datum/job/hos
+/datum/job/commissar
 	title = "Commissar"
-	flag = HOS
+	flag = COMMISSAR
 	department_head = list("Lord General")
 	department_flag = ENGSEC
 	faction = "Station"
@@ -34,7 +34,7 @@ Head of Shitcurity
 			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
 			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
 
-/datum/job/hos/equip_items(var/mob/living/carbon/human/H)
+/datum/job/commissar/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/det(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/swat/comissar2(H), slot_shoes)
@@ -64,9 +64,9 @@ Head of Shitcurity
 /*
 Detective
 */
-/datum/job/detective
+/datum/job/enforcer
 	title = "Enforcer"
-	flag = DETECTIVE
+	flag = ENFORCER
 	department_head = list("Comissar")
 	department_flag = ENGSEC
 	faction = "Station"
@@ -84,7 +84,7 @@ Detective
 	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_court, access_brig)
 	minimal_access = list(access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_court)
 
-/datum/job/detective/equip_items(var/mob/living/carbon/human/H)
+/datum/job/enforcer/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/head_of_security(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(H), slot_shoes)
@@ -124,9 +124,9 @@ Detective
 /*
 Security Officer
 */
-/datum/job/officer
+/datum/job/ig_guardsman
 	title = "Imperial Guardsman"
-	flag = OFFICER
+	flag = IGGUARDSMAN
 	department_head = list("Comissar")
 	department_flag = ENGSEC
 	faction = "Station"
@@ -143,7 +143,7 @@ Security Officer
 	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_court) //But see /datum/job/warden/get_access()
 
-/datum/job/officer/equip_items(var/mob/living/carbon/human/H)
+/datum/job/ig_guardsman/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	assign_sec_to_department(H)
 
@@ -154,7 +154,7 @@ Security Officer
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun(H), slot_s_store)
 
 
-/datum/job/officer/get_access()
+/datum/job/ig_guardsman/get_access()
 	var/list/L = list()
 	if(dep_access)
 		L |= dep_access.Copy()
@@ -164,7 +164,7 @@ Security Officer
 
 var/list/sec_departments = list("engineering", "supply", "medical", "science")
 
-/datum/job/officer/proc/assign_sec_to_department(var/mob/living/carbon/human/H)
+/datum/job/ig_guardsman/proc/assign_sec_to_department(var/mob/living/carbon/human/H)
 	if(!sec_departments.len)
 		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
 	else
@@ -182,9 +182,9 @@ var/list/sec_departments = list("engineering", "supply", "medical", "science")
 /*
 Warden
 */
-/datum/job/warden
+/datum/job/ig_guard_sergeant
 	title = "Guardsman Sergeant"
-	flag = WARDEN
+	flag = IGGUARDSERGEANT
 	department_head = list("Comissar")
 	department_flag = ENGSEC
 	faction = "Station"
@@ -197,7 +197,7 @@ Warden
 	access = list(access_security, access_sec_doors, access_brig, access_armory, access_court, access_maint_tunnels, access_morgue)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_armory, access_court) //See /datum/job/warden/get_access()
 
-/datum/job/warden/equip_items(var/mob/living/carbon/human/H)
+/datum/job/ig_guard_sergeant/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/imperialboots(H), slot_shoes)
@@ -222,7 +222,7 @@ Warden
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun/kantrael(H), slot_l_hand)
 
 
-/datum/job/warden/get_access()
+/datum/job/ig_guard_sergeant/get_access()
 	var/list/L = list()
 	L = ..() | check_config_for_sec_maint()
 	return L

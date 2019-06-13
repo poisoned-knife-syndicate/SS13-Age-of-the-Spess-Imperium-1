@@ -1,9 +1,9 @@
 /*
 Chief Medical Officer
 */
-/datum/job/cmo
+/datum/job/sister_hospitaller
 	title = "Sister Hospitaller"
-	flag = CMO
+	flag = SISTERHOSPITALLER
 	department_head = list("Ecclesiarchy")
 	department_flag = MEDSCI
 	faction = "Station"
@@ -27,7 +27,7 @@ Chief Medical Officer
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
 			access_keycard_auth, access_sec_doors)
 
-/datum/job/cmo/equip_items(var/mob/living/carbon/human/H)
+/datum/job/sister_hospitaller/equip_items(var/mob/living/carbon/human/H)
 	H.gender = "female"
 	H.hair_color = "fff"
 	H.hair_style = "Bobcurl"
@@ -50,9 +50,9 @@ Chief Medical Officer
 /*
 Medical Doctor
 */
-/datum/job/doctor
+/datum/job/trauma_medicus
 	title = "Trauma Medicus"
-	flag = DOCTOR
+	flag = TRAUMAMEDICUS
 	department_head = list("Sister Hospitaller")
 	department_flag = MEDSCI
 	faction = "Station"
@@ -69,7 +69,7 @@ Medical Doctor
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
 	minimal_access = list(access_medical, access_morgue, access_surgery)
 
-/datum/job/doctor/equip_items(var/mob/living/carbon/human/H)
+/datum/job/trauma_medicus/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaidclone
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/medical(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/white(H), slot_shoes)
@@ -85,9 +85,9 @@ Medical Doctor
 /*
 Chemist
 */
-/datum/job/chemist
+/datum/job/pharmacologist
 	title = "Pharmacologist"
-	flag = CHEMIST
+	flag = PHARMACOLOGIST
 	department_head = list("Sister Hospitaller")
 	department_flag = MEDSCI
 	faction = "Station"
@@ -104,7 +104,7 @@ Chemist
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_mineral_storeroom)
 	minimal_access = list(access_medical, access_chemistry, access_mineral_storeroom)
 
-/datum/job/chemist/equip_items(var/mob/living/carbon/human/H)
+/datum/job/pharmacologist/equip_items(var/mob/living/carbon/human/H)
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/chemist(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/white(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/bio_suit/medicus(H), slot_wear_suit)
@@ -174,9 +174,9 @@ Virologist
 	H.equip_to_slot_or_del(new /obj/item/weapon/reagent_containers/hypospray/cure(H), slot_in_backpack)
 	H.equip_to_slot_or_del(new /obj/item/weapon/reagent_containers/hypospray/cure(H), slot_in_backpack)
 
-/datum/job/medic
+/datum/job/igmedic
 	title = "Imperial Guardsman Medic"
-	flag = MEDIC
+	flag = IGMEDIC
 	department_head = list("Comissar")
 	department_flag = ENGSEC
 	faction = "Station"
@@ -193,7 +193,7 @@ Virologist
 	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_court) //But see /datum/job/warden/get_access()
 
-/datum/job/medic/equip_items(var/mob/living/carbon/human/H)
+/datum/job/igmedic/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/imperialboots(H), slot_shoes)
