@@ -204,4 +204,4 @@ Virologist
 	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/medical/(H), slot_belt)
 	H.equip_to_slot_or_del(new /obj/item/weapon/storage/firstaid/advanced(H), slot_in_backpack)
 	H.equip_to_slot_or_del(new /obj/item/weapon/storage/firstaid/advanced(H), slot_in_backpack)
-	H.equip_to_slot_or_del(new /obj/item/weapon/storage/firstaid/advanced(H), slot_in_backpack)
+	H.equip_to_slot_or_del(new /obj/item/weapon/reagent_containers/hypospray/revival(H), slot_in_backpack)

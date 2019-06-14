@@ -22,9 +22,9 @@ Imperial Guard
 	equip_to_slot_or_del(new /obj/item/clothing/head/DKhelmet, slot_head)
 	equip_to_slot_or_del(new /obj/item/weapon/complexsword/DKsword, slot_belt)
 	equip_to_slot_or_del(new /obj/item/weapon/tank/emergency_oxygen/double/DK, slot_r_store)
-	equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/hellpistol, slot_l_store)
+	equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/bpistol, slot_s_store)
 
-	var/rndname = "Lieutenant #([rand(53000, 100000)])"
+	var/rndname = "Krieg Commissar #([rand(53000, 100000)])"
 
 	name = "[rndname]"
 	real_name = "[rndname]"
@@ -32,7 +32,7 @@ Imperial Guard
 	W.icon_state = "dogtag"
 	W.access = get_all_accesses()
 	W.access += get_centcom_access("Captain")
-	W.assignment = "Imperial Guard"
+	W.assignment = "Krieg Commissar"
 	W.registered_name = real_name
 	W.update_label()
 	equip_to_slot_or_del(W, slot_wear_id)
