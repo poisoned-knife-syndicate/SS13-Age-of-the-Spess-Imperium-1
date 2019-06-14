@@ -50,7 +50,7 @@ Head of Shitcurity
 
 
 	spawn(10)
-		var/weaponchoice = input(H, "Select a weapon.","Weapon Selection") as null|anything in list("Power Sword","Mercy Chainsword", "Bolter Pistol", "Heavy Stubber")
+		var/weaponchoice = input(H, "Select a weapon.","Weapon Selection") as null|anything in list("Power Sword","Mercy Chainsword", "Bolter Pistol",)
 		switch(weaponchoice)
 			if("Power Sword")
 				H.equip_to_slot_or_del(new /obj/item/weapon/powersword/munitorium(H), slot_r_hand)
@@ -58,8 +58,7 @@ Head of Shitcurity
 				H.equip_to_slot_or_del(new /obj/item/weapon/twohanded/chainswordig(H), slot_r_hand)
 			if("Bolter Pistol")
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/bpistol(H), slot_r_hand)
-			if("Heavy Stubber")
-				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/l6_saw(H), slot_r_hand)
+
 
 /*
 Detective
@@ -153,7 +152,6 @@ Security Officer
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/imperialhelmet(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun(H), slot_s_store)
 
-
 /datum/job/officer/get_access()
 	var/list/L = list()
 	if(dep_access)
@@ -179,6 +177,7 @@ var/list/sec_departments = list("engineering", "supply", "medical", "science")
 				H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
 			if("science")
 				H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
+
 /*
 Warden
 */

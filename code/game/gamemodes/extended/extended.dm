@@ -1,5 +1,5 @@
 /datum/game_mode/extended
-	name = "extended"
+	name = "Gameplay Test"
 	config_tag = "extended"
 	required_players = 1
 
@@ -10,8 +10,8 @@
 	var/const/waittime_h = 1800
 
 /datum/game_mode/announce()
-	world << "<B>The current game mode is - Extended Role-Playing!</B>"
-	world << "<B>Just have fun and role-play!</B>"
+	world << "<B>The current game mode is - Gameplay Test</B>"
+	world << "<B>Just have fun and role-play!,remember to report any issues/bugs to the administration team and discord.</B>"
 
 /datum/game_mode/extended/pre_setup()
 	return 1

@@ -200,10 +200,10 @@
 			intercept.name = "paper- 'Imperial Command Status Summary'"
 			intercept.info = intercepttext
 
-			comm.messagetitle.Add("Imperial Command Status Summary")
+			comm.messagetitle.Add("Segmentum Command")
 			comm.messagetext.Add(intercepttext)
 
-	priority_announce("INCOMING VOX", "Attention", 'sound/AI/radio.ogg')
+	priority_announce("INCOMING TRANSMISSION FROM SEGMENTUM COMMAND: You have been assigned in this part of the planet to hold this vital area,current data has revealed an Ork ship crashed nearby your location.Follow the instructions from your regiment general and commissar,we will be watching your progress,the Emperor protects.", "Attention", 'sound/AI/radio.ogg')
 
 
 
@@ -337,7 +337,7 @@
 //Reports player logouts//
 //////////////////////////
 proc/display_roundstart_logout_report()
-	var/msg = "\blue <b>All these bitches left after the roundstart...Fuck those guys!\n\n"
+	var/msg = "\blue <b>This players left during the test.\n\n"
 	for(var/mob/living/L in mob_list)
 
 		if(L.ckey)
@@ -347,16 +347,16 @@ proc/display_roundstart_logout_report()
 					found = 1
 					break
 			if(!found)
-				msg += "<b>[L.name]</b> ([L.ckey]), the [L.job] (<font color='#ffcc00'><b>Pussied out</b></font>)\n"
+				msg += "<b>[L.name]</b> ([L.ckey]), the [L.job] (<font color='#ffcc00'><b>Left</b></font>)\n"
 
 
 		if(L.ckey && L.client)
 			if(L.client.inactivity >= (ROUNDSTART_LOGOUT_REPORT_TIME / 2))	//Connected, but inactive (alt+tabbed or something)
-				msg += "<b>[L.name]</b> ([L.ckey]), the [L.job] (<font color='#ffcc00'><b>Completely AFK</b></font>)\n"
+				msg += "<b>[L.name]</b> ([L.ckey]), the [L.job] (<font color='#ffcc00'><b>Away from Keyboard</b></font>)\n"
 				continue //AFK client
 			if(L.stat)
 				if(L.suiciding)	//Suicider
-					msg += "<b>[L.name]</b> ([L.ckey]), the [L.job] (<font color='red'><b>Activated Bitch mode</b></font>)\n"
+					msg += "<b>[L.name]</b> ([L.ckey]), the [L.job] (<font color='red'><b>Left</b></font>)\n"
 					continue //Disconnected client
 				if(L.stat == UNCONSCIOUS)
 					msg += "<b>[L.name]</b> ([L.ckey]), the [L.job] (Dying)\n"

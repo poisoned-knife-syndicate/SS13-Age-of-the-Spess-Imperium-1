@@ -265,7 +265,7 @@ Exterminatus
 		sleep(74)
 		for(var/mob/M in mob_list)
 			M.buckled = temp_buckle
-			M << "\red The Stargazer obliterated ArchAngel IV with a Cyclonic Torpedo!!"
+			M << "\red The Stargazer obliterated all the living creatures in the planet with a Cyclonic Torpedo"
 			M << "\red REBOOTING DUE TO EXTERMINATUS OF PLANET!!"
 			if(M.client)
 				M.client.screen += cinematic
