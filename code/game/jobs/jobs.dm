@@ -47,6 +47,7 @@ var/const/CELEBRITY				=(1<<11)
 var/const/MIME					=(1<<12)
 var/const/ASSISTANT				=(1<<13)
 var/const/ELDARSPY				=(1<<14)
+var/const/GRETCHIN	=(1<<15)
 
 var/list/assistant_occupations = list(
 	"Assistant",
@@ -108,7 +109,8 @@ var/list/civilian_positions = list(
 	"Celebrity",
 	"Mime",
 	"Assistant",
-	"Eldar Spy"
+	"Eldar Spy",
+	"Gretchin"
 )
 
 
