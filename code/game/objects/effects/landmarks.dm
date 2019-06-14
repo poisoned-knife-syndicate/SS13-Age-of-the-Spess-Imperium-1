@@ -29,10 +29,6 @@
 			wizardstart += loc
 			qdel(src)
 			return
-		if("celebrity")
-			celebritystart += loc
-			qdel(src)
-			return
 		if("JoinLate")
 			latejoin += loc
 			qdel(src)
@@ -83,6 +79,186 @@
 	invisibility = 101
 
 	return 1
+
+/obj/effect/landmark/start/general //Lord General
+	name = "General"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "general"
+
+/obj/effect/landmark/start/assistant //Civilian Penitent
+	name = "Civilian Penitent"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "assistant"
+
+/obj/effect/landmark/start/seneschal //Seneschal
+	name = "Seneschal"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "seneschal"
+
+/obj/effect/landmark/start/bartender //Bartender
+	name = "Bartender"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "bartender"
+
+/obj/effect/landmark/start/chef		//Chef
+	name = "Chef"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "chef"
+
+/obj/effect/landmark/start/botanist //Botanist
+	name = "Botanist"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "botanist"
+
+/obj/effect/landmark/start/qm		 //Quartermaster
+	name = "Quartermaster"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "quartermaster"
+
+/obj/effect/landmark/start/cargotech //Cargo Technician
+	name = "Cargo Technician"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "cargotechnician"
+
+/obj/effect/landmark/start/mining	//Shaft Miner
+	name = "Shaft Miner"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "shaftminer"
+
+/obj/effect/landmark/start/celebrity //celebrity
+	name = "Celebrity"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "celebrity"
+
+/obj/effect/landmark/start/mime		//mime
+	name = "Mime"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "mime"
+
+/obj/effect/landmark/start/janitor //janitor
+	name = "Janitor"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "janitor"
+
+/obj/effect/landmark/start/librarian //librarian
+	name = "Librarian"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "librarian"
+
+/obj/effect/landmark/start/inquisitor //inquisitor
+	name = "Inquisitor"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "inquisitor"
+
+/obj/effect/landmark/start/eldarspy //eldar spy
+	name = "Assistant"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "assistant"
+
+/obj/effect/landmark/start/preacher //preacher
+	name = "Preacher"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "preacher"
+
+/obj/effect/landmark/start/magos	//Magos
+	name = "Magos"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "magos"
+
+/obj/effect/landmark/start/explorator	//explorator
+	name = "Explorator"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "explorator"
+
+/obj/effect/landmark/start/atmostech	//Atmospheric Technician
+	name = "Atmospheric Technician"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "atmospherictechnician"
+
+/obj/effect/landmark/start/sister_hospitaller //Sister Hospitaller
+	name = "Sister Hospitaller"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "sisterhospitaller"
+
+/obj/effect/landmark/start/trauma_medicus	//Trauma Medicus
+	name = "Trauma Medicus"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "traumamedicus"
+
+/obj/effect/landmark/start/pharmacologist	//Pharmacologist
+	name = "Pharmacologist"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "pharmacologist"
+
+/obj/effect/landmark/start/geneticist		//Geneticist
+	name = "Geneticist"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "geneticist"
+
+/obj/effect/landmark/start/virologist		//Virologist
+	name = "Virologist"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "virologist"
+
+/obj/effect/landmark/start/igmedic		//Imperial Guardsman Medic
+	name = "Imperial Guardsman Medic"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "igmedic"
+
+/obj/effect/landmark/start/inq_ordos_xenos	//Ordos Xenos Inquisitor
+	name = "Lord Inquisitor, Ordo Xenos"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "ordosxenos"
+
+/obj/effect/landmark/start/scientist 	//scientist
+	name = "Scientist"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "scientist"
+
+/obj/effect/landmark/start/cybernetica_acolyte //Cybernetica Acolyte
+	name = "Cybernetica Acolyte"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "cyberneticaacolyte"
+
+/obj/effect/landmark/start/commissar //Commissar
+	name = "Commissar"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "commissar"
+
+/obj/effect/landmark/start/enforcer	//Enforcer
+	name = "Enforcer"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "enforcer"
+
+/obj/effect/landmark/start/ig_guardsman //Imperial Guardsman
+	name = "Imperial Guardsman"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "imperialguardsman"
+
+/obj/effect/landmark/start/ig_guard_sergeant //Imperial Guard Sergeant
+	name = "Guardsman Sergeant"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "guardsmansergeant"
+
+/obj/effect/landmark/start/AI //Artificial intelligence
+	name = "AI"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "ai"
+
+/obj/effect/landmark/start/servitor	//Servitor
+	name = "Servitor"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "servitor"
+
+/obj/effect/landmark/start/ugoose	//Undercover Goose
+	name = "Undercover Goose"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "ugoose"
+
+/obj/effect/landmark/start/gretchin //Gretchin
+	name = "Gretchin"
+	icon = 'icons/mob/landmarks.dmi'
+	icon_state = "gretchin"
 
 //Costume spawner landmarks
 

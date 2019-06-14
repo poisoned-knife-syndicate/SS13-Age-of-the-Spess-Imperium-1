@@ -6,3 +6,4 @@
 ######################################################################
 
 Scott45 = The Emperor
+Major Mike Tyson = The Emperor

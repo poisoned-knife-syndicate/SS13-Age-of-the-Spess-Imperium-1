@@ -1,5 +1,5 @@
 /datum/job/ork/gretchin
-	title = "gretchin"
+	title = "Gretchin"
 	flag = GRETCHIN
 	department_head = list("Boss")
 	department_flag = CIVILIAN
@@ -10,7 +10,6 @@
 	selection_color = "#dddddd"
 
 /datum/job/ork/gretchin/equip_items(var/mob/living/carbon/human/H)
-	H.equip_to_slot_or_del(new /obj/item/weapon/twohanded/chainswordig(H), slot_r_hand) //testing
 
 /datum/job/ork/gretchin/equip(var/mob/living/carbon/human/H)
 	if(!H)	return 0

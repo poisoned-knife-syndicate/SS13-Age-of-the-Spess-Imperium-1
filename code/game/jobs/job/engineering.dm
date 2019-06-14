@@ -85,7 +85,7 @@ Atmospheric Technician
 */
 
 //I just realized... What on earth do we need this job for? I mean, the mechanicus would totally put a room full of useless pipes on an outpost, but nobody seriously wants to hold this job.
-/*
+
 /datum/job/atmos
 	title = "Atmospheric Technician"
 	flag = ATMOSTECH
@@ -114,4 +114,3 @@ Atmospheric Technician
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/red(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/device/analyzer(H), slot_r_store)
 	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/utility/atmostech/(H), slot_belt)
-*/
