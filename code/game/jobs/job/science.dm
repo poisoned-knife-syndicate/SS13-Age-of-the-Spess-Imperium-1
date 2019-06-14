@@ -1,9 +1,9 @@
 /*
 Research Director
 */
-/datum/job/rd
+/datum/job/inq_ordos_xenos
 	title = "Lord Inquisitor, Ordo Xenos"
-	flag = RD
+	flag = INQORDOSXENOS
 	department_head = list("Ordo Xenos")
 	department_flag = MEDSCI
 	faction = "Station"
@@ -23,7 +23,7 @@ Research Director
 	access = list()
 	minimal_access = list()
 
-/datum/job/rd/equip_items(var/mob/living/carbon/human/H)
+/datum/job/inq_ordos_xenos/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/brown(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/research_director(H), slot_w_uniform)
@@ -39,7 +39,7 @@ Research Director
 		H.equip_to_slot_or_del(new /obj/item/weapon/melee/telebaton(H), slot_in_backpack)
 		H.equip_to_slot_or_del(new /obj/item/weapon/paper/liox(H), slot_in_backpack)
 
-/datum/job/rd/get_access()
+/datum/job/inq_ordos_xenos/get_access()
 	return get_all_accesses()
 /*
 Scientist
@@ -71,9 +71,9 @@ Scientist
 /*
 Roboticist
 */
-/datum/job/roboticist
+/datum/job/cybernetica_acolyte
 	title = "Cybernetica Acolyte"
-	flag = ROBOTICIST
+	flag = CYBERNETICAACOLYTE
 	department_head = list("Ordo Xenos Inquisitor")
 	department_flag = MEDSCI
 	faction = "Station"
@@ -89,7 +89,7 @@ Roboticist
 	access = list(access_robotics, access_tech_storage, access_morgue, access_research, access_tox, access_mineral_storeroom)
 	minimal_access = list(access_robotics, access_tech_storage, access_morgue, access_research, access_mineral_storeroom)
 
-/datum/job/roboticist/equip_items(var/mob/living/carbon/human/H)
+/datum/job/cybernetica_acolyte/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/roboticist(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/black(H), slot_shoes)

@@ -250,7 +250,7 @@ All tech gets a certain amount of CPU. If you remove the (overly restrictive) CP
 	core.rawcode = "$targets = list_targets(); debug_stuff($targets); $enemy = pick($targets); $enemy_name = at($enemy,\"name\"); target_name($enemy_name);"
 	spawn(3)
 		src.botcard = new /obj/item/weapon/card/id(src)
-		var/datum/job/detective/J = new /datum/job/detective
+		var/datum/job/enforcer/J = new /datum/job/enforcer
 		src.botcard.access = J.get_access()
 	spawn(30)
 		src.visible_message("[src] starts up!")

@@ -25,9 +25,9 @@ AI
 /*
 Cyborg
 */
-/datum/job/cyborg
+/datum/job/servitor
 	title = "Servitor"
-	flag = CYBORG
+	flag = SERVITOR
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 0
@@ -36,7 +36,7 @@ Cyborg
 	selection_color = "#ddffdd"
 	minimal_player_age = 21
 
-/datum/job/cyborg/equip(var/mob/living/carbon/human/H)
+/datum/job/servitor/equip(var/mob/living/carbon/human/H)
 	if(!H)	return 0
 	return H.Robotize()
 

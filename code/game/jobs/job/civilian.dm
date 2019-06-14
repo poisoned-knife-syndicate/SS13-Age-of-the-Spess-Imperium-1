@@ -332,9 +332,9 @@ Librarian
 /*
 Inquisitor
 */
-/datum/job/lawyer
+/datum/job/inquisitor
 	title = "Inquisitor"
-	flag = LAWYER
+	flag = INQUISITOR
 	department_head = list("Ordo Hereticus")
 	department_flag = CIVILIAN
 	faction = "Station"
@@ -362,7 +362,7 @@ Inquisitor
 			            access_theatre, access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_mineral_storeroom, access_cent_inquisitor, access_cent_general, access_cent_hereticus)
 
-/datum/job/lawyer/equip_items(var/mob/living/carbon/human/H)
+/datum/job/inquisitor/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/inq(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/inq/random(H), slot_wear_suit)

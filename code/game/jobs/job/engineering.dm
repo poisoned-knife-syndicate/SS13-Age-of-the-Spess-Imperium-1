@@ -1,9 +1,9 @@
 /*
 Chief Engineer
 */
-/datum/job/chief_engineer
+/datum/job/magos
 	title = "Magos"
-	flag = CHIEF
+	flag = MAGOS
 	department_head = list("Lord General")
 	department_flag = ENGSEC
 	faction = "Station"
@@ -25,7 +25,7 @@ Chief Engineer
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
 
-/datum/job/chief_engineer/equip_items(var/mob/living/carbon/human/H)
+/datum/job/magos/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/chief_engineer(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/red(H), slot_shoes)
@@ -41,15 +41,15 @@ Chief Engineer
 		H.equip_to_slot_or_del(new /obj/item/weapon/reagent_containers/syringe(H), slot_in_backpack)
 		H.equip_to_slot_or_del(new /obj/item/weapon/paper/magos(H), slot_in_backpack)
 
-/datum/job/chief_engineer/get_access()
+/datum/job/magos/get_access()
 	return get_all_accesses()
 
 /*
 Station Engineer
 */
-/datum/job/engineer
-	title = "Techpriest"
-	flag = ENGINEER
+/datum/job/explorator
+	title = "Explorator"
+	flag = EXPLORATOR
 	department_head = list("Magos")
 	department_flag = ENGSEC
 	total_positions = 5
@@ -69,7 +69,7 @@ Station Engineer
 	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 									access_external_airlocks, access_construction, access_tcomsat)
 
-/datum/job/engineer/equip_items(var/mob/living/carbon/human/H)
+/datum/job/explorator/equip_items(var/mob/living/carbon/human/H)
 	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
 	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/engineer(H), slot_w_uniform)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/red(H), slot_shoes)
@@ -84,7 +84,7 @@ Atmospheric Technician
 */
 
 //I just realized... What on earth do we need this job for? I mean, the mechanicus would totally put a room full of useless pipes on an outpost, but nobody seriously wants to hold this job.
-/*
+
 /datum/job/atmos
 	title = "Atmospheric Technician"
 	flag = ATMOSTECH
@@ -113,4 +113,3 @@ Atmospheric Technician
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/red(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/device/analyzer(H), slot_r_store)
 	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/utility/atmostech/(H), slot_belt)
-*/
