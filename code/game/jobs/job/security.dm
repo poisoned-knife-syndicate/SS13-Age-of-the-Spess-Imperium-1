@@ -152,12 +152,8 @@ Security Officer
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/imperialhelmet(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun(H), slot_s_store)
 
-<<<<<<< HEAD
 
 /datum/job/ig_guardsman/get_access()
-=======
-/datum/job/officer/get_access()
->>>>>>> fuck
 	var/list/L = list()
 	if(dep_access)
 		L |= dep_access.Copy()

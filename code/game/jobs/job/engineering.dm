@@ -47,15 +47,9 @@ Chief Engineer
 /*
 Station Engineer
 */
-<<<<<<< HEAD
 /datum/job/explorator
 	title = "Explorator"
 	flag = EXPLORATOR
-=======
-/datum/job/engineer
-	title = "Techpriest"
-	flag = ENGINEER
->>>>>>> fuck
 	department_head = list("Magos")
 	department_flag = ENGSEC
 	total_positions = 5
