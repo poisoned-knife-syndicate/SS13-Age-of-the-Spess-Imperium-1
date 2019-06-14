@@ -48,7 +48,7 @@ Chief Engineer
 Station Engineer
 */
 /datum/job/engineer
-	title = "Explorator"
+	title = "Techpriest"
 	flag = ENGINEER
 	department_head = list("Magos")
 	department_flag = ENGSEC
@@ -58,7 +58,6 @@ Station Engineer
 	supervisors = "the Magos"
 	selection_color = "#fff5cc"
 
-	default_pda = /obj/item/device/pda/engineering
 	default_pda_slot = slot_l_store
 	default_headset = /obj/item/device/radio/headset/headset_eng
 	default_backpack = /obj/item/weapon/storage/backpack/industrial
@@ -78,7 +77,7 @@ Station Engineer
 	H.equip_to_slot_or_del(new /obj/item/device/t_scanner(H), slot_r_store)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/space/rig(H), slot_wear_suit)
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/space/rig(H), slot_head)
-	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/laspistol2(H), slot_l_store)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun/kantrael(H), slot_l_store)
 	H.faction = "Mechanicus"
 /*
 Atmospheric Technician
