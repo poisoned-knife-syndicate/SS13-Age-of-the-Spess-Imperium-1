@@ -489,7 +489,7 @@ Lord Inquisitor Armor
 	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
 
 /obj/item/clothing/suit/armor/imperialarmor/leader
-	name = "guardsman sergeant armor"
+	name = "Guardsman Sergeant armor"
 	desc = "Standard issue armor given to Guardsmen Sergeants of the Imperial Guard. More resistant to heavy fire than the normal variant"
 	icon_state = "guardsmanleader_armor"
 	item_state = "guardsmanleader_armor"
@@ -603,6 +603,46 @@ Lord Inquisitor Armor
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	armor = list(melee = 80, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
+
+/obj/item/clothing/suit/armor/inqarmor
+	name = "Inquisitor Armor"
+	desc = "Smells of Blood and Tears of the Convicted.."
+	icon_state = "inquisitor-armor"
+	icon_state = "inquisitor-armor"
+	blood_overlay_type = "armor"
+	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
+	body_parts_covered = CHEST|ARMS|GROIN
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	armor = list(melee = 60, bullet = 55, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/Psykercoat
+	name = "Psyker Coat"
+	desc = "Standart coat used by sanctioned psykers to die later on"
+	icon_state = "psyker_armor"
+	icon_state = "psyker_armor"
+	blood_overlay_type = "armor"
+	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
+	body_parts_covered = CHEST|ARMS|GROIN
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	armor = list(melee = 65, bullet = 55, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
+
+// Here we go boys.
+
+/obj/item/clothing/suit/armor/AMpowerarmor
+	name = "Angry Marine Power Armor"
+	desc = "IF YOU DONT SHUT THE FUCK UP ABOUT THE TAUS I WILL FUCKING KILL YOU,YOU'RE AN ABSOLUTE FUCKING RETARD AND YOU WILL FUCKING DIE HERETIC"
+	icon_state = "anger-armor"
+	item_state = "anger-armor"
+	armor = list(melee = 95, bullet = 80, laser = 80, energy = 90, bomb = 80, bio = 90, rad = 95)
+
+/obj/item/clothing/suit/armor/LMpowerarmor
+	name = "Lamenter Power Armor"
+	desc = "Lamenter Power armor."
+	icon_state = "lamenter-armor"
+	item_state = "lamenter-armor"
+	armor = list(melee = 95, bullet = 80, laser = 80, energy = 90, bomb = 80, bio = 90, rad = 95)
 
 /obj/item/clothing/suit/armor/KBpowerarmor
 	name = "Khorne Berserker Armor"
