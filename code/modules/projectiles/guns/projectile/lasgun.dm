@@ -6,7 +6,7 @@ LASGUNS
 
 /obj/item/weapon/gun/projectile/automatic/lasgun
 	name = "M-Galaxy Pattern Lasgun"
-	desc = "Standard issue ranged weapon given to Guardsmen of the Imperial Guard."
+	desc = "Standard issue ranged weapon given to Guardsmen of the Imperial Guard,now with a bayonet."
 	icon_state = "lasgun"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK
@@ -20,6 +20,8 @@ LASGUNS
 	canattach = 0
 	scopetype = 0
 	ejectcasing = 0 //Technically energy based! None of that!
+	force = 10.0
+	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 
 /obj/item/weapon/gun/projectile/automatic/lasgun/process_chamber(var/eject_casing = 0, var/empty_chamber = 1)    //be afraid of my skill
 	..()

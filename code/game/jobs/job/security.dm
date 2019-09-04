@@ -41,7 +41,9 @@ Head of Shitcurity
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/commissarcap(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/hos/comissarcoat(H), slot_wear_suit)
 	H.equip_to_slot_or_del(new /obj/item/weapon/melee/chainofcommand/cwhip(H), slot_in_backpack)
-	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/imperialbelt(H), slot_belt)
+	H.equip_to_slot_or_del(new /obj/item/ammo_box/magazine/bpistolmag(H), slot_in_backpack)
+	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/bpistol(H), slot_s_store)
+	H.equip_to_slot_or_del(new /obj/item/weapon/chainsword(H), slot_belt)
 
 	if(H.backbag == 1)
 		H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_l_store)
@@ -50,14 +52,14 @@ Head of Shitcurity
 
 
 	spawn(10)
-		var/weaponchoice = input(H, "Select a weapon.","Weapon Selection") as null|anything in list("Power Sword","Mercy Chainsword", "Bolter Pistol",)
+		var/weaponchoice = input(H, "Select a weapon.","Weapon Selection") as null|anything in list("Power Sword","Mercy Chainsword", "Hell Pistol",)
 		switch(weaponchoice)
 			if("Power Sword")
 				H.equip_to_slot_or_del(new /obj/item/weapon/powersword/munitorium(H), slot_r_hand)
 			if("Mercy Chainsword")
 				H.equip_to_slot_or_del(new /obj/item/weapon/twohanded/chainswordig(H), slot_r_hand)
 			if("Bolter Pistol")
-				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/bpistol(H), slot_r_hand)
+				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/hellpistol(H), slot_r_hand)
 
 
 /*
@@ -129,7 +131,7 @@ Warden
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/imperialboots(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/imperialarmor/leader(H), slot_wear_suit)
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sgtheadset(H), slot_head)
-	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/imperialbelt(H), slot_belt)
+	H.equip_to_slot_or_del(new /obj/item/weapon/chainsword(H), slot_belt)
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun(H), slot_s_store)
 	if(H.backbag == 1)
 		H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_l_hand)

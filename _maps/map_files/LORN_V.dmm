@@ -368,64 +368,63 @@
 "hd" = (/obj/machinery/rack/hellgun/full,/turf/simulated/floor/engine,/area/factions/deathkorps)
 "he" = (/obj/structure/sign/securearea,/turf/simulated/wall/legacy_3,/area/factions/deathkorps)
 "hf" = (/obj/machinery/rack/firstaid2/full,/turf/simulated/floor/engine,/area/factions/deathkorps)
-"hg" = (/turf/simulated/wall/legacy_2r{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hh" = (/turf/simulated/wall/legacy_2r{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
+"hg" = (/turf/simulated/wall/legacy_2r{color = "red"},/area/centcom/am)
+"hh" = (/turf/simulated/wall/legacy_2r{color = "yellow"},/area/centcom/am)
 "hi" = (/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/engine,/area/factions/deathkorps)
-"hj" = (/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
+"hj" = (/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
 "hk" = (/obj/structure/table/reinforced,/obj/item/weapon/weldingtool/largetank,/obj/item/weapon/weldingtool/largetank,/obj/item/weapon/weldingtool/largetank,/obj/item/weapon/weldingtool/largetank,/obj/item/weapon/weldingtool/largetank,/turf/simulated/floor/engine,/area/factions/deathkorps)
 "hl" = (/obj/machinery/door/airlock{name = "Heavy Weaponary Room"},/turf/simulated/floor/engine,/area/factions/deathkorps)
-"hm" = (/obj/machinery/light{dir = 1; luminosity = 2},/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
+"hm" = (/obj/machinery/light{dir = 1; luminosity = 2},/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
 "hn" = (/obj/structure/table/reinforced,/obj/item/clothing/glasses/welding,/obj/item/clothing/glasses/welding,/obj/item/clothing/glasses/welding,/obj/item/clothing/glasses/welding,/obj/item/clothing/glasses/welding,/obj/item/clothing/glasses/welding,/obj/item/clothing/head/welding,/obj/item/clothing/head/welding,/obj/item/clothing/head/welding,/obj/item/clothing/head/welding,/obj/item/clothing/head/welding,/turf/simulated/floor/engine,/area/factions/deathkorps)
 "ho" = (/obj/effect/decal/cleanable/generic,/turf/simulated/floor/engine,/area/factions/deathkorps)
 "hp" = (/obj/effect/decal/cleanable/oil/streak,/turf/simulated/floor/engine,/area/factions/deathkorps)
 "hq" = (/obj/machinery/rack/chainsword/full,/turf/simulated/floor/engine,/area/factions/deathkorps)
-"hr" = (/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
+"hr" = (/turf/unsimulated/floor{color = "red"},/area/centcom/am)
 "hs" = (/obj/mecha/combat/chimera/kreig/loaded,/turf/simulated/floor/engine,/area/factions/deathkorps)
-"ht" = (/obj/item/weapon/reagent_containers/food/snacks/meatsteak,/obj/effect/decal/cleanable/greenglow,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hu" = (/obj/effect/decal/cleanable/generic,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hv" = (/obj/item/clothing/head/eldarhat,/obj/effect/decal/cleanable/blood/gibs/core,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hw" = (/obj/item/weapon/reagent_containers/food/drinks/soda_cans/energydrink,/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hx" = (/obj/item/weapon/reagent_containers/food/snacks/burger/bigbite,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hy" = (/obj/structure/table/reinforced,/obj/item/ammo_box/magazine/boltermag,/obj/item/ammo_box/magazine/boltermag,/obj/item/ammo_box/magazine/boltermag,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hz" = (/obj/structure/table/reinforced,/obj/item/ammo_box/magazine/boltermag/inf,/obj/item/ammo_box/magazine/boltermag/inf,/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hA" = (/obj/structure/table/reinforced,/obj/item/weapon/twohanded/required/hflamer,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hB" = (/obj/structure/table/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/item/weapon/grenade/plasma/lesser,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hC" = (/obj/structure/table/reinforced,/obj/item/weapon/baseballbat/powerbat,/obj/item/weapon/baseballbat/powerbat,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hD" = (/obj/structure/table/reinforced,/obj/item/weapon/gun/projectile/sbolter,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hE" = (/obj/structure/table/reinforced,/obj/item/weapon/gun/energy/plasma/pistol,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hF" = (/obj/structure/stool/bed/chair,/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hG" = (/obj/structure/stool/bed/chair,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hH" = (/obj/effect/decal/cleanable/blood/old,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hI" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hJ" = (/obj/machinery/light{dir = 4},/obj/effect/decal/cleanable/generic,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hK" = (/obj/structure/table/reinforced,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hL" = (/obj/structure/table/reinforced,/obj/item/weapon/reagent_containers/food/snacks/meatbreadslice,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hM" = (/obj/item/weapon/reagent_containers/food/snacks/burger/superbite,/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hN" = (/obj/machinery/door/airlock/hatch{name = "THE ANGRY FUCKING ARMORY"},/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hO" = (/obj/structure/table/reinforced,/obj/item/weapon/reagent_containers/food/snacks/burger/bigbite,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hP" = (/obj/structure/table/reinforced,/obj/item/weapon/reagent_containers/food/drinks/soda_cans/energydrink,/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hQ" = (/obj/structure/table/reinforced,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/item/weapon/gun/energy/combibolter,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hR" = (/turf/unsimulated/wall/fakeglass,/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hS" = (/obj/item/weapon/twohanded/required/multimelta,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hT" = (/obj/structure/stool/bed/chair{dir = 1},/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hU" = (/obj/structure/stool/bed/chair{dir = 1},/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hV" = (/obj/machinery/light{dir = 4},/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hW" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hX" = (/obj/effect/decal/cleanable/blood/gibs,/obj/item/clothing/head/tau/fwbhelmet,/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hY" = (/obj/structure/table/reinforced,/obj/item/ammo_box/magazine/boltermag,/obj/item/ammo_box/magazine/boltermag,/obj/item/ammo_box/magazine/boltermag,/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"hZ" = (/obj/structure/table/reinforced,/obj/item/weapon/gun/grenadelauncher,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"ia" = (/obj/structure/table/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/item/weapon/gun/energy/plasma/rifle,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"ib" = (/obj/structure/table/reinforced,/obj/item/weapon/twohanded/fireaxe,/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"ic" = (/obj/structure/table/reinforced,/obj/item/weapon/gun/projectile/meltagun,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"id" = (/obj/structure/table/reinforced,/obj/item/weapon/twohanded/required/hbolter,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"ie" = (/obj/effect/decal/cleanable/blood/old,/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"if" = (/obj/effect/decal/cleanable/greenglow,/turf/unsimulated/floor{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"ig" = (/turf/unsimulated/wall/fakedoor{name = "THE FUCKING BRIDGE!"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"ih" = (/obj/item/weapon/reagent_containers/food/drinks/soda_cans/energydrink,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"ii" = (/turf/unsimulated/wall/fakedoor{name = "HERETIC PUNCHING AREA"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"ij" = (/obj/item/weapon/reagent_containers/food/snacks/burger/superbite,/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"ik" = (/obj/structure/sign/securearea{desc = "A warning sign which reads 'GET THE FUCK IN YOU ABSOLUTE RETARD! YOU'RE GONNA KICK THE ENEMY ON THE FUCKING BALLS AND CONTINUE UNTIL THEIR ARMY HAS NO BALLS LEFT YOU FUCKTWIT!'."; name = "\improper ENTER AND KICK SOME FUCKING ASS!"},/turf/simulated/wall/legacy_2r{color = "yellow"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
-"il" = (/obj/machinery/door/airlock/hatch{name = "FUCKZONE ENTRACE!"},/turf/unsimulated/floor{color = "red"},/area/centcom{name = "\improper ANGRY MARINE SHITSHIP!"})
+"ht" = (/obj/item/weapon/reagent_containers/food/snacks/meatsteak,/obj/effect/decal/cleanable/greenglow,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hu" = (/obj/effect/decal/cleanable/generic,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hv" = (/obj/item/clothing/head/eldarhat,/obj/effect/decal/cleanable/blood/gibs/core,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hw" = (/turf/unsimulated/wall{color = "yellow"; icon_state = "2r_iron0"},/area/centcom/am)
+"hx" = (/obj/item/weapon/reagent_containers/food/snacks/burger/bigbite,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hy" = (/obj/structure/table/reinforced,/obj/item/ammo_box/magazine/boltermag,/obj/item/ammo_box/magazine/boltermag,/obj/item/ammo_box/magazine/boltermag,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hz" = (/obj/structure/table/reinforced,/obj/item/ammo_box/magazine/boltermag/inf,/obj/item/ammo_box/magazine/boltermag/inf,/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"hA" = (/obj/structure/table/reinforced,/obj/item/weapon/twohanded/required/hflamer,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hB" = (/obj/structure/table/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/item/weapon/grenade/plasma/lesser,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hC" = (/obj/structure/table/reinforced,/obj/item/weapon/baseballbat/powerbat,/obj/item/weapon/baseballbat/powerbat,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hD" = (/obj/structure/table/reinforced,/obj/item/weapon/gun/projectile/sbolter,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hE" = (/obj/structure/table/reinforced,/obj/item/weapon/gun/energy/plasma/pistol,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hF" = (/obj/structure/stool/bed/chair,/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"hG" = (/obj/structure/stool/bed/chair,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hH" = (/obj/effect/decal/cleanable/blood/old,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hI" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hJ" = (/obj/machinery/light{dir = 4},/obj/effect/decal/cleanable/generic,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hK" = (/obj/structure/table/reinforced,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hL" = (/obj/structure/table/reinforced,/obj/item/weapon/reagent_containers/food/snacks/meatbreadslice,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hM" = (/obj/item/weapon/reagent_containers/food/snacks/burger/superbite,/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"hN" = (/obj/machinery/door/airlock/hatch{name = "THE ANGRY FUCKING ARMORY"},/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hO" = (/obj/structure/table/reinforced,/obj/item/weapon/reagent_containers/food/snacks/burger/bigbite,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hP" = (/obj/structure/table/reinforced,/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"hQ" = (/obj/structure/table/reinforced,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/item/weapon/gun/energy/combibolter,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hR" = (/turf/unsimulated/wall/fakeglass,/area/centcom/am)
+"hS" = (/obj/item/weapon/twohanded/required/multimelta,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hT" = (/obj/structure/stool/bed/chair{dir = 1},/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"hU" = (/obj/structure/stool/bed/chair{dir = 1},/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hV" = (/obj/machinery/light{dir = 4},/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"hW" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"hX" = (/obj/effect/decal/cleanable/blood/gibs,/obj/item/clothing/head/tau/fwbhelmet,/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"hY" = (/obj/structure/table/reinforced,/obj/item/ammo_box/magazine/boltermag,/obj/item/ammo_box/magazine/boltermag,/obj/item/ammo_box/magazine/boltermag,/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"hZ" = (/obj/structure/table/reinforced,/obj/item/weapon/gun/grenadelauncher,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"ia" = (/obj/structure/table/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/item/weapon/gun/energy/plasma/rifle,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"ib" = (/obj/structure/table/reinforced,/obj/item/weapon/twohanded/fireaxe,/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"ic" = (/obj/structure/table/reinforced,/obj/item/weapon/gun/projectile/meltagun,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"id" = (/obj/structure/table/reinforced,/obj/item/weapon/twohanded/required/hbolter,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"ie" = (/obj/effect/decal/cleanable/blood/old,/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"if" = (/obj/effect/decal/cleanable/greenglow,/turf/unsimulated/floor{color = "yellow"},/area/centcom/am)
+"ig" = (/turf/unsimulated/wall/fakedoor{name = "THE FUCKING BRIDGE!"},/area/centcom/am)
+"ii" = (/turf/unsimulated/wall/fakedoor{name = "HERETIC PUNCHING AREA"},/area/centcom/am)
+"ij" = (/obj/item/weapon/reagent_containers/food/snacks/burger/superbite,/turf/unsimulated/floor{color = "red"},/area/centcom/am)
+"ik" = (/obj/structure/sign/securearea{desc = "A warning sign which reads 'GET THE FUCK IN YOU ABSOLUTE RETARD! YOU'RE GONNA KICK THE ENEMY ON THE FUCKING BALLS AND CONTINUE UNTIL THEIR ARMY HAS NO BALLS LEFT YOU FUCKTWIT!'."; name = "\improper ENTER AND KICK SOME FUCKING ASS!"},/turf/simulated/wall/legacy_2r{color = "yellow"},/area/centcom/am)
+"il" = (/obj/machinery/door/airlock/hatch{name = "FUCKZONE ENTRACE!"},/turf/unsimulated/floor{color = "red"},/area/centcom/am)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -585,16 +584,16 @@ ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePeP
 ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePeP
 ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhghghhhhhghhhhePePePePePePePePePePePePePePePePePePePePePePePePePePePePeP
 ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhhhhghhhhhhePhhhjhjhmhrhrhhePhhhghhhhhghhhhhhhhePePePePePePePePePePePePePePePePePePeP
-ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhghthuhrhvhhePhghwhjhrhjhxhhePhghyhzhAhBhChDhEhhePePePePePePePePePePePePePePePePePePeP
+ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhghthuhrhvhhePhghjhjhrhjhxhhePhghyhzhAhBhChDhEhhePePePePePePePePePePePePePePePePePePeP
 ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhhrhFhGhrhhhhhghrhHhjhrhjhhhhhhhIhrhrhjhjhrhJhgePePePePePePePePePePePePePePePePePePeP
-ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhhrhKhLhrhrhrhMhrhrhrhrhjhrhrhNhrhrhjhrhHhrhjhhhhhhePePePePePePePePePePePePePePePePeP
-ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhghIhOhPhrhrhrhrhrhjhrhrhjhjhuhghrhjhrhQhrhjhjhRhShhePePePePePePePePePePePePePePePePeP
-ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhhrhThUhrhuhrhrhrhjhjhjhrhrhrhNhrhuhrhrhrhjhrhghhhhePePePePePePePePePePePePePePePePeP
-ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhhjhjhrhrhhhghhhIhrhjhrhVhghhhhhWhjhwhjhrhjhVhhePePePePePePePePePePePePePePePePePePeP
+ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhhrhKhLhrhrhrhMhrhrhrhrhjhrhrhNhrhrhjhrhHhrhjhwhwhwePePePePePePePePePePePePePePePePeP
+ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhghIhOhPhrhrhrhrhrhjhrhrhjhjhuhghrhjhrhQhrhjhjhRhShwePePePePePePePePePePePePePePePePeP
+ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhhrhThUhrhuhrhrhrhjhjhjhrhrhrhNhrhuhrhrhrhjhrhwhwhwePePePePePePePePePePePePePePePePeP
+ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhhjhjhrhrhhhghhhIhrhjhrhVhghhhhhWhjhjhjhrhjhVhhePePePePePePePePePePePePePePePePePePeP
 ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhhghhhhhghhePhhhjhrhjhXhjhhePhhhYhzhZiaibicidhhePePePePePePePePePePePePePePePePePePeP
 ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhiehrhjhjifhhePhhhghhhhhhhghhhhhhePePePePePePePePePePePePePePePePePePeP
 ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhghrhrhjhrhrhhePePePePePePePePePePePePePePePePePePePePePePePePePePePePeP
-ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePighrhjhjihhriiePePePePePePePePePePePePePePePePePePePePePePePePePePePePeP
+ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePighrhjhjhrhriiePePePePePePePePePePePePePePePePePePePePePePePePePePePePeP
 ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePighjhjhrhjhriiePePePePePePePePePePePePePePePePePePePePePePePePePePePePeP
 ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhijhrhrhHhrhgePePePePePePePePePePePePePePePePePePePePePePePePePePePePeP
 ePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePePhhhWhrhrhjhVhhePePePePePePePePePePePePePePePePePePePePePePePePePePePePeP

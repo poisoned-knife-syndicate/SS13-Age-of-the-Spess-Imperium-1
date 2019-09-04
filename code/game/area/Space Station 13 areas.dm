@@ -142,7 +142,7 @@ proc/process_ghost_teleport_locs()
 	power_equip = 0
 	power_environ = 0
 	ambientsounds = list('sound/ambience/ambiatm1.ogg')
-	
+
 /area/warzone
 
 	requires_power = 1
@@ -382,6 +382,10 @@ SOB Area
 	icon_state = "centcom"
 	requires_power = 0
 
+/area/centcom/am
+	name = "Angry Marine Battlebarge 'SHITSHOW'"
+	icon_state = "centcom"
+	requires_power = 0
 
 /area/shuttle/sob
 	name = "\improper SOB Shuttle"

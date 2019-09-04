@@ -2,7 +2,7 @@
 
 /obj/item/weapon/gun/projectile/automatic/lasgunkreig
 	name = "Lucious Pattern Lasgun"
-	desc = "Standart issue ranged weapon of the Imperial Guard"
+	desc = "Standart issue ranged weapon of the Imperial Guard."
 	icon_state = "lucious"
 	item_state = "lucious"
 	slot_flags = SLOT_BACK

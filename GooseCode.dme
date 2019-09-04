@@ -1061,6 +1061,7 @@
 #include "code\modules\mob\living\carbon\human\humanvariants\trade.dm"
 #include "code\modules\mob\living\carbon\human\humanvariants\um.dm"
 #include "code\modules\mob\living\carbon\human\humanvariants\valhallan.dm"
+#include "code\modules\mob\living\carbon\human\humanvariants\worldbearer.dm"
 #include "code\modules\mob\living\carbon\human\humanvariants\special\marineferry.dm"
 #include "code\modules\mob\living\carbon\human\whitelisted\eldar.dm"
 #include "code\modules\mob\living\carbon\human\whitelisted\helpers.dm"
