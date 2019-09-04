@@ -59,7 +59,7 @@
 
 	var/server
 	var/banappeals
-	var/wikiurl = "http://archangelsystem.wikia.com/wiki/Archangelsystem_Wikia" // Default wiki link.
+	var/wikiurl // Default wiki link.
 	var/forumurl
 
 	var/forbid_singulo_possession = 0

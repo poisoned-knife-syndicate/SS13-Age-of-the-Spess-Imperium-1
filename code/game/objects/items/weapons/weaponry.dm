@@ -53,6 +53,19 @@
 	w_class = 3.0
 	m_amt = 18750 //5 sheets of metal per bat in the autolathe
 
+/obj/item/weapon/baseballbat/powerbat
+	name = "Power bat"
+	desc = "For when you can't be fucked with dealing with swarms of guardsmen."
+	icon_state = "powerbat"
+	item_state = "woodbat"
+	w_class = 3.0
+	force = 42
+	throw_speed = 3
+	throw_range = 7
+	throwforce = 7
+	attack_verb = list("smashed", "beaten", "slammed", "smacked", "striked", "battered", "bonked", "FUCKED UP!", "DESTROYED!", "ASSERTED DOMINANCE!", "CRIPPLED!",)
+	hitsound = 'sound/weapons/genhit3.ogg'
+
 /obj/item/weapon/butterfly
 	name = "butterfly knife"
 	desc = "A basic metal blade concealed in a lightweight plasteel grip. Small enough when folded to fit in a pocket."

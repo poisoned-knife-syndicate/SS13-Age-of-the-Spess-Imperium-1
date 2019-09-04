@@ -1,10 +1,12 @@
 <!-- Most valid html will work in here, excluding images. -->
 
-<h3>Spess Imperium</h3>
+<h1>SS40k: Age of the Imperium</h1>
 
-Welcome to the server imperial or heretic.
-We are trying to turn the ARCHANGEL STATION code into a Team Deathmatch themed server where you will be able to play as a Guardsman and many other Warhammer40k roles (Such as Daemons/Chaos Space marines/Eldars/Orks/etc).
+<h3>Welcome to a testing session!</h3>
 
-If you have any question about the Warhammer40k universe please head to our discord or ahelp.
+<i>The server is in active development and it could always use extra help.
 
-Discord: https://discord.gg/vpmS3ZE
+If you have any questions about the Warhammer 40k Universe, or this server. Feel free to ask in discord, or ahelp.
+
+<b>Discord:</b> https://discord.gg/vpmS3ZE
+<b>Github:</b> https://github.com/warhammer-in-a-2d-spessmen-game/SS13-Age-of-the-Spess-Imperium</i>

@@ -185,14 +185,14 @@ datum/preferences
 						clothes_s.Blend(new /icon('icons/mob/back.dmi', "backpack"), ICON_OVERLAY)
 					if(backbag == 3)
 						clothes_s.Blend(new /icon('icons/mob/back.dmi', "satchel-tox"), ICON_OVERLAY)
-				if(SCIENTIST)
+
 					clothes_s = new /icon('icons/mob/uniform.dmi', "science_s")
 					clothes_s.Blend(new /icon('icons/mob/feet.dmi', "warmboots"), ICON_UNDERLAY)
 					if(backbag == 2)
 						clothes_s.Blend(new /icon('icons/mob/back.dmi', "backpack"), ICON_OVERLAY)
 					if(backbag == 3)
 						clothes_s.Blend(new /icon('icons/mob/back.dmi', "satchel-tox"), ICON_OVERLAY)
-				if(PHARMACOLOGIST)
+
 					clothes_s = new /icon('icons/mob/uniform.dmi', "chemistrywhite_s")
 					clothes_s.Blend(new /icon('icons/mob/feet.dmi', "white"), ICON_UNDERLAY)
 					clothes_s.Blend(new /icon('icons/mob/suit.dmi', "plaguedoctor2"), ICON_OVERLAY)
@@ -220,7 +220,7 @@ datum/preferences
 						clothes_s.Blend(new /icon('icons/mob/back.dmi', "medicalpack"), ICON_OVERLAY)
 					if(backbag == 3)
 						clothes_s.Blend(new /icon('icons/mob/back.dmi', "satchel-med"), ICON_OVERLAY)
-				if(GENETICIST)
+
 					clothes_s = new /icon('icons/mob/uniform.dmi', "geneticswhite_s")
 					clothes_s.Blend(new /icon('icons/mob/feet.dmi', "white"), ICON_UNDERLAY)
 					clothes_s.Blend(new /icon('icons/mob/suit.dmi', "labcoat_gen_open"), ICON_OVERLAY)
@@ -228,7 +228,7 @@ datum/preferences
 						clothes_s.Blend(new /icon('icons/mob/back.dmi', "medicalpack"), ICON_OVERLAY)
 					if(backbag == 3)
 						clothes_s.Blend(new /icon('icons/mob/back.dmi', "satchel-gen"), ICON_OVERLAY)
-				if(VIROLOGIST)
+
 					clothes_s = new /icon('icons/mob/uniform.dmi', "virologywhite_s")
 					clothes_s.Blend(new /icon('icons/mob/feet.dmi', "white"), ICON_UNDERLAY)
 					clothes_s.Blend(new /icon('icons/mob/mask.dmi', "sterile"), ICON_OVERLAY)
@@ -280,7 +280,7 @@ datum/preferences
 						clothes_s.Blend(new /icon('icons/mob/back.dmi', "securitypack"), ICON_OVERLAY)
 					if(backbag == 3)
 						clothes_s.Blend(new /icon('icons/mob/back.dmi', "satchel-sec"), ICON_OVERLAY)
-				if(ENFORCER)
+				if(KASRKIN)
 					clothes_s = new /icon('icons/mob/uniform.dmi', "detective_s")
 					clothes_s.Blend(new /icon('icons/mob/feet.dmi', "brown"), ICON_UNDERLAY)
 					clothes_s.Blend(new /icon('icons/mob/items_lefthand.dmi', "gun"), ICON_UNDERLAY)

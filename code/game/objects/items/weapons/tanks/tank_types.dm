@@ -87,22 +87,6 @@
 
 // NEW BATPACKS
 
-/obj/item/weapon/tank/oxygen/AMback
-	name = "Angry Marine Powersource"
-	desc = "WHAT ARE YOU LOOKING AT YOU FUCKING RETARD"
-	icon_state = "anger-pack"
-	item_state = "anger-pack"
-	volume = 800
-	flags = STOPSPRESSUREDMAGE|NODROP
-
-/obj/item/weapon/tank/oxygen/LMback
-	name = "Lamenter Marine Powersource"
-	desc = "A Lamenter BATPACK"
-	icon_state = "lamenter-pack"
-	item_state = "lamenter-pack"
-	volume = 800
-	flags = STOPSPRESSUREDMAGE|NODROP
-
 /obj/item/weapon/tank/oxygen/BRback
 	name = "Blood Raven Powersource"
 	desc = "A Blood Raven BATPACK"
@@ -119,19 +103,11 @@
 	volume = 800
 	flags = STOPSPRESSUREDMAGE|NODROP
 
-/obj/item/weapon/tank/oxygen/BOREALUMback
+/obj/item/weapon/tank/oxygen/BRCback
 	name = "Blood Raven Commander Powersource"
-	desc = "We are the spehss mahrens! WE ARE THE EMPRA'S FUREH!!"
+	desc = "A Blood Raven Commander BATPACK"
 	icon_state = "cdrraven-pack"
 	item_state = "cdrraven-pack"
-	volume = 800
-	flags = STOPSPRESSUREDMAGE|NODROP
-
-/obj/item/weapon/tank/oxygen/WBback
-	name = "World Bearer Powersource"
-	desc = "A Batpack for the World Bearer Chaos marines"
-	icon_state = "chaos-pack"
-	item_state = "chaos-pack"
 	volume = 800
 	flags = STOPSPRESSUREDMAGE|NODROP
 
@@ -140,6 +116,22 @@
 	desc = "A Batpack FOR THE BLOOD GOD"
 	icon_state = "KBback"
 	item_state = "KBback"
+	volume = 800
+	flags = STOPSPRESSUREDMAGE|NODROP
+
+/obj/item/weapon/tank/oxygen/WBback
+	name = "World Bearer Powersource"
+	desc = "A Batpack for the World Bearer Chaos marines"
+	icon_state = "chaos_pack"
+	item_state = "chaos_pack"
+	volume = 800
+	flags = STOPSPRESSUREDMAGE|NODROP
+
+/obj/item/weapon/tank/oxygen/AMback
+	name = "Angry Marine Powersource"
+	desc = "WHAT ARE YOU LOOKING AT YOU FUCKING RETARD"
+	icon_state = "anger_pack"
+	item_state = "anger_pack"
 	volume = 800
 	flags = STOPSPRESSUREDMAGE|NODROP
 

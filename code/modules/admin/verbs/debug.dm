@@ -1183,7 +1183,7 @@ var/global/list/g_fancy_list_of_safe_types = null
 			M.equip_to_slot_or_del(new /obj/item/clothing/shoes/magboots(M), slot_shoes)
 			M.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/KBpowerarmor(M), slot_wear_suit)
 			M.equip_to_slot_or_del(new /obj/item/clothing/gloves/yellow(M), slot_gloves)
-			M.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/KBpowerhelmet(M), slot_head)
+			M.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/KBhelmet(M), slot_head)
 			M.equip_to_slot_or_del(new /obj/item/weapon/card/id/syndicate(M), slot_wear_id)
 			M.equip_to_slot_or_del(new /obj/item/weapon/tank/oxygen/KBback(M), slot_back)
 			M.equip_to_slot_or_del(new /obj/item/ammo_box/magazine/boltermag(M), slot_l_store)

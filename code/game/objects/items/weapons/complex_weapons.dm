@@ -14,7 +14,7 @@ But ideally this will create an actual concept of melee dueling.
 	slot_flags = SLOT_BELT
 	force = 20
 	throwforce = 25
-	w_class = 3
+	w_class = 2
 	attack_speedmod = -1
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "cut")
 

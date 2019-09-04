@@ -79,37 +79,4 @@ Station Engineer
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/space/rig(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun/kantrael(H), slot_l_store)
 	H.faction = "Mechanicus"
-/*
-Atmospheric Technician
-*/
 
-//I just realized... What on earth do we need this job for? I mean, the mechanicus would totally put a room full of useless pipes on an outpost, but nobody seriously wants to hold this job.
-
-/datum/job/atmos
-	title = "Atmospheric Technician"
-	flag = ATMOSTECH
-	department_head = list("Magos")
-	department_flag = ENGSEC
-	faction = "Station"
-	total_positions = 3
-	spawn_positions = 2
-	supervisors = "the Magos"
-	selection_color = "#fff5cc"
-
-	default_pda = /obj/item/device/pda/atmos
-	default_pda_slot = slot_l_store
-	default_headset = /obj/item/device/radio/headset/headset_eng
-	default_backpack = /obj/item/weapon/storage/backpack/industrial
-	default_satchel = /obj/item/weapon/storage/backpack/industrial
-	default_storagebox = /obj/item/weapon/storage/box/engineer
-
-	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
-									access_external_airlocks, access_construction, access_atmospherics)
-	minimal_access = list(access_atmospherics, access_maint_tunnels, access_emergency_storage, access_construction)
-
-/datum/job/atmos/equip_items(var/mob/living/carbon/human/H)
-	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
-	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/atmospheric_technician(H), slot_w_uniform)
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/red(H), slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/device/analyzer(H), slot_r_store)
-	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/utility/atmostech/(H), slot_belt)

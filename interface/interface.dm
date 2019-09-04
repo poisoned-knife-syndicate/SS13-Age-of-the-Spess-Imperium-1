@@ -1,5 +1,5 @@
 //Please use mob or src (not usr) in these procs. This way they can be called in the same fashion as procs.
-/client/verb/wiki()
+/*/client/verb/wiki() //THESE USED TO HAVE BUTTONS IN SKIN.DMF
 	set name = "wiki"
 	set desc = "Visit the wiki."
 	set hidden = 1
@@ -12,7 +12,7 @@
 	return
 
 /client/verb/forum()
-	set name = "forum"
+	set name = "forum" //THIS TOO, WE DON'T NEED THESE BITCHES
 	set desc = "Visit the forum."
 	set hidden = 1
 	if( config.forumurl )
@@ -21,23 +21,23 @@
 		src << link(config.forumurl)
 	else
 		src << "\red The forum URL is not set in the server configuration."
-	return
+	return*/
 
-#define RULES_FILE "config/rules.html"
-/client/verb/rules()
+#define RULES_FILE "config/buttonrules.html"
+/client/verb/rules() //BUT THIS GUY? HES GOING TO STAY.
 	set name = "Rules"
 	set desc = "Show Server Rules."
 	set hidden = 1
 	src << browse(file(RULES_FILE), "window=rules;size=480x320")
 #undef RULES_FILE
 
-/client/verb/changelog()
+/*/client/verb/changelog()
 	set name = "Changelog"
 	set category = "OOC"
 	if(alert("This will open the wiki in your browser. Are you sure?",,"Yes","No")=="No")
 		return
 	src << link("http://archangelstation.enjin.com/forum/m/25188046/viewforum/4694125") //Links to all the patch notes. Hardcoded for now.
-	return
+	return*/
 
 /client/verb/hotkeys_help()
 	set name = "hotkeys-help"

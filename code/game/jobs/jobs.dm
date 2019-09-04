@@ -8,7 +8,7 @@ var/const/ENGSEC				=(1<<0)
 var/const/GENERAL				=(1<<0) //landmark done
 var/const/COMMISSAR				=(1<<1) //landmark done
 var/const/IGGUARDSERGEANT		=(1<<2) //landmark done
-var/const/ENFORCER				=(1<<3) //landmark done
+var/const/KASRKIN  			    =(1<<3) //landmark done
 var/const/IGGUARDSMAN			=(1<<4) //landmark done
 var/const/MAGOS					=(1<<5) //landmark done
 var/const/EXPLORATOR			=(1<<6) //landmark done
@@ -22,13 +22,8 @@ var/const/IGMEDIC 				=(1<<12) //landmark done
 var/const/MEDSCI				=(1<<1)
 
 var/const/INQORDOSXENOS			=(1<<0) //landmark done
-var/const/SCIENTIST				=(1<<1) //landmark done
-var/const/PHARMACOLOGIST		=(1<<2) //landmark done
 var/const/SISTERHOSPITALLER		=(1<<3) //landmark done
 var/const/TRAUMAMEDICUS			=(1<<4) //landmark done
-var/const/GENETICIST			=(1<<5) //landmark done
-var/const/VIROLOGIST			=(1<<6) //landmark done
-
 
 var/const/CIVILIAN				=(1<<2)
 

@@ -133,14 +133,6 @@
 	src << "You will [(prefs.be_special & role_flag) ? "now" : "no longer"] be considered for [role] events (where possible)."
 	feedback_add_details("admin_verb","TBeSpecial") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/verb/toggle_member_publicity()
-	set name = "Toggle Membership Publicity"
-	set category = "Preferences"
-	set desc = "Toggles whether other players can see that you are a BYOND member (OOC blag icon/colours)."
-	prefs.toggles ^= MEMBER_PUBLIC
-	prefs.save_preferences()
-	src << "Others can[(prefs.toggles & MEMBER_PUBLIC) ? "" : "not"] see whether you are a byond member."
-
 var/list/ghost_forms = list("ghost","ghostking","ghostian2","ghost_fire","ghost_dark", \
 							"watcher","revenant_idle","spirit", "ghost_camo","ghost_red","ghost_dred") //Lets give them a slightly different set of forms to reflect the more significant role of the "ghost world"
 
@@ -148,8 +140,7 @@ var/list/ghost_forms = list("ghost","ghostking","ghostian2","ghost_fire","ghost_
 	set name = "Choose Ghost Form"
 	set category = "Preferences"
 	set desc = "Choose your preferred ghostly appearance."
-	if(!is_content_unlocked())	return
-	var/new_form = input(src, "Thanks for supporting BYOND - Choose your ghostly form:","Thanks for supporting BYOND",null) as null|anything in ghost_forms
+	var/new_form = input(src, "Choose your ghostly form:","Choose your ghostly form",null) as null|anything in ghost_forms
 	if(new_form)
 		prefs.ghost_form = new_form
 		prefs.save_preferences()

@@ -81,99 +81,6 @@ Medical Doctor
 	if(H.backbag != 1)
 		H.equip_to_slot_or_del(new /obj/item/weapon/paper/medicus(H), slot_in_backpack)
 
-
-/*
-Chemist
-*/
-/datum/job/pharmacologist
-	title = "Pharmacologist"
-	flag = PHARMACOLOGIST
-	department_head = list("Sister Hospitaller")
-	department_flag = MEDSCI
-	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "Sister Hospitaller"
-	selection_color = "#ffeef0"
-
-	default_pda = /obj/item/device/pda/chemist
-	default_headset = /obj/item/device/radio/headset/headset_med
-	default_backpack = /obj/item/weapon/storage/backpack/satchel_robo
-	default_satchel = /obj/item/weapon/storage/backpack/satchel_robo
-
-	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_mineral_storeroom)
-	minimal_access = list(access_medical, access_chemistry, access_mineral_storeroom)
-
-/datum/job/pharmacologist/equip_items(var/mob/living/carbon/human/H)
-	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/chemist(H), slot_w_uniform)
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/white(H), slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/clothing/suit/bio_suit/medicus(H), slot_wear_suit)
-	H.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/medicus, slot_wear_mask)
-	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health/night(H), slot_glasses)
-
-	if(H.backbag != 1)
-		H.equip_to_slot_or_del(new /obj/item/weapon/paper/medicus(H), slot_in_backpack)
-
-/*
-Geneticist
-*/
-/datum/job/geneticist
-	title = "Geneticist"
-	flag = GENETICIST
-	department_head = list("Sister Hospitaller", "Lord Inquisitor")
-	department_flag = MEDSCI
-	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the sister hospitaller and lord inquisitor"
-	selection_color = "#ffeef0"
-
-	default_pda = /obj/item/device/pda/geneticist
-	default_headset = /obj/item/device/radio/headset/headset_medsci
-	default_backpack = /obj/item/weapon/storage/backpack/medic
-	default_satchel = /obj/item/weapon/storage/backpack/satchel_gen
-
-	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research)
-	minimal_access = list(access_medical, access_morgue, access_genetics, access_research)
-
-/datum/job/geneticist/equip_items(var/mob/living/carbon/human/H)
-	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/geneticist(H), slot_w_uniform)
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/white(H), slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/clothing/suit/labcoat/genetics(H), slot_wear_suit)
-	H.equip_to_slot_or_del(new /obj/item/device/flashlight/pen(H), slot_s_store)
-
-/*
-Virologist
-*/
-/datum/job/virologist
-	title = "Virologist"
-	flag = VIROLOGIST
-	department_head = list("Sister Hospitaller")
-	department_flag = MEDSCI
-	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the sister hospitaller"
-	selection_color = "#ffeef0"
-
-	default_pda = /obj/item/device/pda/viro
-	default_headset = /obj/item/device/radio/headset/headset_med
-	default_backpack = /obj/item/weapon/storage/backpack/medic
-	default_satchel = /obj/item/weapon/storage/backpack/satchel_vir
-
-	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_mineral_storeroom)
-	minimal_access = list(access_medical, access_virology, access_mineral_storeroom)
-
-/datum/job/virologist/equip_items(var/mob/living/carbon/human/H)
-	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/virologist(H), slot_w_uniform)
-	H.equip_to_slot_or_del(new /obj/item/clothing/mask/surgical(H), slot_wear_mask)
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/white(H), slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/clothing/suit/labcoat/virologist(H), slot_wear_suit)
-	H.equip_to_slot_or_del(new /obj/item/device/flashlight/pen(H), slot_s_store)
-	H.equip_to_slot_or_del(new /obj/item/weapon/reagent_containers/hypospray/cure(H), slot_in_backpack)
-	H.equip_to_slot_or_del(new /obj/item/weapon/reagent_containers/hypospray/cure(H), slot_in_backpack)
-	H.equip_to_slot_or_del(new /obj/item/weapon/reagent_containers/hypospray/cure(H), slot_in_backpack)
-
 /datum/job/igmedic
 	title = "Imperial Guardsman Medic"
 	flag = IGMEDIC
@@ -203,5 +110,5 @@ Virologist
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/lasgun/kantrael(H), slot_s_store)
 	H.equip_to_slot_or_del(new /obj/item/weapon/storage/belt/medical/(H), slot_belt)
 	H.equip_to_slot_or_del(new /obj/item/weapon/storage/firstaid/advanced(H), slot_in_backpack)
-	H.equip_to_slot_or_del(new /obj/item/weapon/storage/firstaid/advanced(H), slot_in_backpack)
 	H.equip_to_slot_or_del(new /obj/item/weapon/reagent_containers/hypospray/revival(H), slot_in_backpack)
+

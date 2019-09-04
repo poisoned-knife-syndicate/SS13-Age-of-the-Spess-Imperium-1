@@ -352,6 +352,25 @@ Lord Inquisitor Armor
 	armor = list(melee = 80, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
 	astartes = 1
 
+/obj/item/clothing/suit/armor/AMpowerarmor
+	name = "Angry Marine Power Armor"
+	desc = "ANGRY MARINES!!! ALWAYS ANGRY!!! ALL THE TIME!!! FUCKING SCREAM IT YOU XENOSFUCKING, ULTRASHIT-LOVING FUCKTARD!!!"
+	icon_state = "anger_armor"
+	item_state = "anger_armor"
+	w_class = 4//bulky item
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/gun/projectile/automatic/bolter)
+	flags = NODROP|THICKMATERIAL | STOPSPRESSUREDMAGE
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HANDS|CHEST|LEGS|FEET|ARMS|GROIN
+	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	blood_overlay_type = "armor"
+	slowdown = 1
+	armor = list(melee = 80, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
+	astartes = 1
+
 /obj/item/clothing/suit/armor/TMpowerarmor
 	name = "Blood Raven Terminator Power Armor"
 	desc = "Tactical Dreadnought Armour, more commonly known as Terminator Armour, is an advanced form of powered armour developed for close-quarters melee fighting done by Space Marine Terminators, for whom slaying power is more important than maneuverability. These suits are primarily utilised in situations where standard Space Marine Power Armour does not provide enough protection for a warrior."
@@ -368,7 +387,7 @@ Lord Inquisitor Armor
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	blood_overlay_type = "armor"
 	slowdown = 1
-	armor = list(melee = 90, bullet = 90, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
+	armor = list(melee = 95, bullet = 95, laser = 95, energy = 100, bomb = 100, bio = 100, rad = 100)
 	astartes = 1
 
 
@@ -378,6 +397,7 @@ Lord Inquisitor Armor
 	icon_state = "raven_cmdarmor"
 	item_state = "raven_cmdarmor"
 	armor = list(melee = 85, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95) //FOR THE CHAPTER.
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/gun/projectile/automatic/bolter)
 
 /obj/item/clothing/suit/armor/WBpowerarmor
 	name = "World Bearer Power Armor"
@@ -385,13 +405,15 @@ Lord Inquisitor Armor
 	icon_state = "chaos-armor"
 	item_state = "chaos-armor"
 	armor = list(melee = 85, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95)
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/gun/projectile/automatic/bolter)
 
 /obj/item/clothing/suit/armor/NMarmor
 	name = "Noise Marine Power Armor"
 	desc = "Lust, Greed, Temptation! This armour as symbols of chaos, mostly of Marks of Slaanesh carved and painted onto the power armor, it has pink, black and purple painted onto the armor, gold marks on the each arm and each leg, and one on the armor's chestplate. It makes you feel lustful."
 	icon_state = "chaos-noisearmor"
 	item_state = "chaos-noisearmor"
-	armor = list(melee = 95, bullet = 70, laser = 60, energy = 100, bomb = 80, bio = 90, rad = 95) //THIS SOUND OFFENDS SLANNESH!!
+	armor = list(melee = 95, bullet = 70, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95) //THIS SOUND OFFENDS SLANNESH!!
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/gun/projectile/automatic/bolter)
 
 /obj/item/clothing/suit/armor/umpowerarmor/captain
 	name = "Ultra Marine Captain Power Armor"
@@ -469,34 +491,34 @@ Lord Inquisitor Armor
 	armor = list(melee = 55, bullet = 35, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/imperialarmor
-	name = "guardsman armor"
+	name = "Guardsman armor"
 	desc = "Standard issue armor given to Guardsmen of the Imperial Guard. Protects against some damage."
 	icon_state = "guardsman_armor"
 	item_state = "guardsman_armor"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN
 	armor = list(melee = 30, bullet = 10, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
-	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun,/obj/item/weapon/gun/projectile/automatic/autogun2,)
 
 /obj/item/clothing/suit/armor/imperialarmor/medic
-	name = "guardsman medic armor"
+	name = "Guardsman medic armor"
 	desc = "Standard issue armor given to Guardsmen Medics of the Imperial Guard. Lighter than the normal variant."
 	icon_state = "guardsmanmedic_armor"
 	item_state = "guardsmanmedic_armor"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN
 	armor = list(melee = 25, bullet = 10, laser = 25,energy = 10, bomb = 15, bio = 25, rad = 0) //In case of... Nurgle?
-	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun,/obj/item/weapon/gun/projectile/automatic/autogun2,)
 
 /obj/item/clothing/suit/armor/imperialarmor/leader
-	name = "Guardsman Sergeant armor"
+	name = "Guardsman sergeant armor"
 	desc = "Standard issue armor given to Guardsmen Sergeants of the Imperial Guard. More resistant to heavy fire than the normal variant"
 	icon_state = "guardsmanleader_armor"
 	item_state = "guardsmanleader_armor"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN
 	armor = list(melee = 40, bullet = 40, laser = 40,energy = 30, bomb = 35, bio = 0, rad = 0)
-	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun,/obj/item/weapon/gun/projectile/automatic/autogun2,)
 
 /obj/item/clothing/suit/armor/imperialarmor/reinforced
 	name = "Reinforced Flak Armor"
@@ -506,6 +528,16 @@ Lord Inquisitor Armor
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|ARMS|GROIN
 	armor = list(melee = 65, bullet = 45, laser = 50, energy = 50, bomb = 40, bio = 0, rad = 5)
+
+/obj/item/clothing/suit/armor/imperialarmor/kasrkinarmor
+	name = "Cadian Shock Trooper armor"
+	desc = "The common armor of the Kasrkin,the finest Guardsman Elite of Cadia."
+	icon_state = "kasrkinarmor"
+	item_state = "kasrkinarmor"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|ARMS|GROIN
+	armor = list(melee = 65, bullet = 55, laser = 50, energy = 50, bomb = 40, bio = 0, rad = 5)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun,/obj/item/weapon/gun/projectile/automatic/autogun2,/obj/item/weapon/gun/energy/plasma/rifle)
 
 /obj/item/clothing/suit/armor/carapace
 	name = "carapace armor"
@@ -604,46 +636,6 @@ Lord Inquisitor Armor
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	armor = list(melee = 80, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
 
-/obj/item/clothing/suit/armor/inqarmor
-	name = "Inquisitor Armor"
-	desc = "Smells of Blood and Tears of the Convicted.."
-	icon_state = "inquisitor-armor"
-	icon_state = "inquisitor-armor"
-	blood_overlay_type = "armor"
-	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
-	body_parts_covered = CHEST|ARMS|GROIN
-	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
-	armor = list(melee = 60, bullet = 55, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
-
-/obj/item/clothing/suit/armor/Psykercoat
-	name = "Psyker Coat"
-	desc = "Standart coat used by sanctioned psykers to die later on"
-	icon_state = "psyker_armor"
-	icon_state = "psyker_armor"
-	blood_overlay_type = "armor"
-	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
-	body_parts_covered = CHEST|ARMS|GROIN
-	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
-	armor = list(melee = 65, bullet = 55, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
-
-// Here we go boys.
-
-/obj/item/clothing/suit/armor/AMpowerarmor
-	name = "Angry Marine Power Armor"
-	desc = "IF YOU DONT SHUT THE FUCK UP ABOUT THE TAUS I WILL FUCKING KILL YOU,YOU'RE AN ABSOLUTE FUCKING RETARD AND YOU WILL FUCKING DIE HERETIC"
-	icon_state = "anger-armor"
-	item_state = "anger-armor"
-	armor = list(melee = 95, bullet = 80, laser = 80, energy = 90, bomb = 80, bio = 90, rad = 95)
-
-/obj/item/clothing/suit/armor/LMpowerarmor
-	name = "Lamenter Power Armor"
-	desc = "Lamenter Power armor."
-	icon_state = "lamenter-armor"
-	item_state = "lamenter-armor"
-	armor = list(melee = 95, bullet = 80, laser = 80, energy = 90, bomb = 80, bio = 90, rad = 95)
-
 /obj/item/clothing/suit/armor/KBpowerarmor
 	name = "Khorne Berserker Armor"
 	desc = "Khorne Berserker Armor"
@@ -663,6 +655,18 @@ Lord Inquisitor Armor
 	armor = list(melee = 80, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
 
 //inquisitor
+
+/obj/item/clothing/suit/armor/inqarmor
+	name = "Inquisitor Armor"
+	desc = "Smells of Blood and Tears of the Convicted.."
+	icon_state = "inquisitor_armor"
+	icon_state = "inquisitor_armor"
+	blood_overlay_type = "armor"
+	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
+	body_parts_covered = CHEST|ARMS|GROIN
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	armor = list(melee = 60, bullet = 55, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/inq
 	name = "Inquisitor Suit"

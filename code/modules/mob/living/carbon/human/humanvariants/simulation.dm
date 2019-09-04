@@ -179,7 +179,7 @@
 	src.equip_to_slot_or_del(new /obj/item/clothing/shoes/magboots(src), slot_shoes)
 	src.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/KBpowerarmor(src), slot_wear_suit)
 	src.equip_to_slot_or_del(new /obj/item/clothing/gloves/yellow(src), slot_gloves)
-	src.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/KBpowerhelmet(src), slot_head)
+	src.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/KBhelmet(src), slot_head)
 	src.equip_to_slot_or_del(new /obj/item/weapon/tank/oxygen/KBback(src), slot_back)
 	src.equip_to_slot_or_del(new /obj/item/ammo_box/magazine/boltermag(src), slot_l_store)
 	src.equip_to_slot_or_del(new /obj/item/ammo_box/magazine/boltermag(src), slot_r_store)

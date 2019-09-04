@@ -115,7 +115,7 @@
 	name = "Imperial Fragmentation Grenade"
 	icon = 'icons/obj/grenade.dmi'
 	icon_state = "fragnade"
-	item_state = "fragnade_live"
+	item_state = "fragnade"
 	origin_tech = "materials=3;magnets=4;syndicate=4"
 
 /obj/item/weapon/grenade/imperial/prime()
@@ -169,8 +169,8 @@
 	desc = "The fuck do you think it is?"
 	name = "Imperial Krak Grenade"
 	icon = 'icons/obj/grenade.dmi'
-	icon_state = "kraknade"
-	item_state = "frag"
+	icon_state = "krak"
+	item_state = "krak_active"
 	origin_tech = "materials=3;magnets=4;syndicate=4"
 	throw_range = 4
 

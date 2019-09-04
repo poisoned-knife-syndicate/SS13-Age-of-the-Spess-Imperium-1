@@ -47,7 +47,7 @@
 	..()	//redirect to hsrc.Topic()
 
 /client/proc/is_content_unlocked()
-	if(!prefs.unlock_content)
+	if(!prefs.unlock_content) //You know, I'll leave this here but theres absolutely no chance I'm going to lock things behind a byond membership.
 		src << "Become a BYOND member to access member-perks and features, as well as support the engine that makes this game possible. <a href='http://www.byond.com/membership'>Click Here to find out more</a>."
 		return 0
 	return 1

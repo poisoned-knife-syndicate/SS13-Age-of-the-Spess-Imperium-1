@@ -49,8 +49,7 @@
 	should_patrol = 1
 
 	src.botcard = new /obj/item/weapon/card/id(src)
-	var/datum/job/janitor/J = new/datum/job/janitor
-	src.botcard.access = J.get_access()
+
 
 	if(radio_controller)
 		radio_controller.add_object(src, beacon_freq, filter = RADIO_NAVBEACONS)
@@ -187,7 +186,7 @@ text("<A href='?src=\ref[src];operation=oddbutton'>[src.oddbutton ? "Yes" : "No"
 	if(src.emagged && prob(5)) //Spawns foam!
 		visible_message("<span class='danger'>[src] whirs and bubbles violently, before releasing a plume of froth!</span>")
 		new /obj/effect/effect/foam(src.loc)
-		
+
 	if(!src.target || src.target == null)
 		for (var/obj/effect/decal/cleanable/D in view(7,src))
 			for(var/T in src.target_types)

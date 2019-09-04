@@ -68,8 +68,7 @@ var/global/mulebot_count = 0
 	..()
 	wires = new(src)
 	botcard = new(src)
-	var/datum/job/cargo_tech/J = new/datum/job/cargo_tech
-	botcard.access = J.get_access()
+
 //	botcard.access += access_robotics //Why --Ikki
 	cell = new(src)
 	cell.charge = 20000 //10x more power so that these things will really be useful
