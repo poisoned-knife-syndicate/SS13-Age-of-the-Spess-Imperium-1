@@ -11,6 +11,19 @@
 	heat_protection = HEAD
 	max_heat_protection_temperature = HELMET_MAX_TEMP_PROTECT
 
+/obj/item/clothing/head/rebelhelmet
+	name = "Renegade Helmet"
+	desc = "Crude kevlar and plasteel plates form this helmet. <font color='blue'><i>Again, ditch at first opportunity. Looks dashing, though.</i></font>"
+	icon_state = "rebelhelmet"
+	item_state = "rebelhelmet"
+	flags = HEADCOVERSEYES
+	armor = list(melee = 50, bullet = 35, laser = 50,energy = 10, bomb = 25, bio = 0, rad = 0)
+	flags_inv = HIDEEARS|HIDEEYES
+	cold_protection = HEAD
+	min_cold_protection_temperature = HELMET_MIN_TEMP_PROTECT
+	heat_protection = HEAD
+	max_heat_protection_temperature = HELMET_MAX_TEMP_PROTECT
+
 /obj/item/clothing/head/eldarhat
 	name = "Guardian Helmet"
 	desc = "A helmet forged of wraithbone."

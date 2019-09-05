@@ -1050,6 +1050,7 @@
 #include "code\modules\mob\living\carbon\human\humanvariants\angrymarine.dm"
 #include "code\modules\mob\living\carbon\human\humanvariants\br.dm"
 #include "code\modules\mob\living\carbon\human\humanvariants\cadian.dm"
+#include "code\modules\mob\living\carbon\human\humanvariants\chaosyiff.dm"
 #include "code\modules\mob\living\carbon\human\humanvariants\elysian.dm"
 #include "code\modules\mob\living\carbon\human\humanvariants\humanservitor.dm"
 #include "code\modules\mob\living\carbon\human\humanvariants\kb.dm"

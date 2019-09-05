@@ -505,7 +505,7 @@
 	can_roll = 0
 
 /obj/item/clothing/under/stormtroop
-	desc = "Life is too hectic at this time for me to right a valid description #calls for help via code"
+	desc = "A Red nice looking uniform to show who's the boss."
 	name = "Stormtrooper Uniform"
 	icon_state = "storms"
 	item_state = "storms"
@@ -514,3 +514,14 @@
 	body_parts_covered = GROIN|LEGS
 	fitted = 0
 	can_roll = 0
+
+/obj/item/clothing/under/rebel
+	name = "Hive Ganger Clothing"
+	desc = "Made of recycled cloth subtitutes- they're guaranteed to protect against nothing. <font color='blue'><i>Bane's gang makes these things from scavenged Guard uniforms. Quantity over quality.</i></font>"
+	has_sensor = 0
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
+	icon_state = "rebeluniform"
+	item_state = "rebeluniform"
+	item_color = "rebeluniform"

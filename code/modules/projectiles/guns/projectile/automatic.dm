@@ -910,7 +910,7 @@ Autogun
 
 /obj/item/weapon/gun/projectile/automatic/autogun2
 	name = "AutoGun"
-	desc = "A durable, rapid fire battle rifle that forms an excellent staple for imperial forces. Has a 160 shot magazine. Select fire of semi-automatic, three round burst, and fully automatic."
+	desc = "A durable, rapid fire battle rifle that forms an excellent staple for imperial forces. Has a 60 and 160 shot magazine. Select fire of semi-automatic, three round burst, and fully automatic."
 	icon_state = "autogun"
 	item_state = "autogun"
 	w_class = 3

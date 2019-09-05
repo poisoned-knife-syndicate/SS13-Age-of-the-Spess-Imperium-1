@@ -25,6 +25,16 @@
 	item_state = "militaryjacket"
 	body_parts_covered = CHEST|ARMS
 
+/obj/item/clothing/suit/armor/rebel
+	name = "Renegade Armor"
+	desc = "Bundled fiber and plasteel-inserts form a crude, but effective defense. <font color='blue'><i>ALWAYS ditch at first opportunity. These things are terrible.</i></font>"
+	icon_state = "rebelarmor"
+	item_state = "rebelarmor"
+	blood_overlay_type = "armor"
+	body_parts_covered = CHEST|GROIN
+	armor = list(melee = 30, bullet = 30, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
+	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun, /obj/item/weapon/gun/projectile/automatic/autogun2)
+
 /obj/item/clothing/suit/armor/hos
 	name = "armored coat"
 	desc = "A greatcoat enchanced with a special alloy for some protection and style."
