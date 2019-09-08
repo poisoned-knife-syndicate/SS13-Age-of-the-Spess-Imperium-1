@@ -6,14 +6,14 @@
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
-	icon = 'ss40k.dmi'
+	icon = 'modules/opo/ss40k.dmi'
 	icon_state = "rebeluniform"
 	item_state = "rebeluniform
 
 /obj/item/clothing/suit/armor/rebel
 	name = "Renegade Armor"
 	desc = "Bundled fiber and plasteel-inserts form a crude, but effective defense. <font color='blue'><i>ALWAYS ditch at first opportunity. These things are terrible.</i></font>"
-	icon = 'ss40k.dmi'
+	icon = 'modules/opo/ss40k.dmi'
 	icon_state = "rebelarmor"
 	item_state = "rebelarmor"
 	blood_overlay_type = "armor"
@@ -30,7 +30,7 @@
 /obj/item/weapon/gun/projectile/automatic/lasgun/rebel
 	name = "Modified Lasgun"
 	desc = "Lasgun parts shoved into an autopistol frame. <font color='blue'><i>Always swap out the lenses with new ones from the Corpse-dogs, lest yours turn into a grenade.</i></font>"
-	icon = 'ss40k.dmi'
+	icon = 'modules/opo/ss40k.dmi'
 	icon_state = "rebellasgun"
 	item_state = "rebellasgun"
 
@@ -47,7 +47,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/rebeldrug
 	name = "Frenzon Injector"
 	desc = "A one-use Frenzon injector. Popular among gangers. <font color='blue'><i>Once you come off the Frenzon high- you're fucked.></i></font>"
-	icon = 'ss40k.dmi'
+	icon = 'modules/opo/ss40k.dmi'
 	icon_state = "frenzoninjector"
 	trash = /obj/item/trash
 	filling_color = "#754C24"
@@ -63,7 +63,7 @@
 /obj/item/clothing/head/rebelhelmet
 	name = "Renegade Helmet"
 	desc = "Crude kevlar and plasteel plates form this helmet. <font color='blue'><i>Again, ditch at first opportunity. Looks dashing, though.</i></font>"
-	icon = 'ss40k.dmi'
+	icon = 'modules/opo/ss40k.dmi'
 	icon_state = "rebelhelmet"
 	item_state = "rebelhelmet"
 	flags = HEADCOVERSEYES
