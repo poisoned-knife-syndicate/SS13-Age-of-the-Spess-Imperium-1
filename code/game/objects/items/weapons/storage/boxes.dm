@@ -583,9 +583,7 @@ Callidus Box
 		new /obj/item/weapon/grenade/imperial(src)
 		new /obj/item/weapon/grenade/imperial(src)
 		new /obj/item/weapon/grenade/imperial(src)
-		new /obj/item/weapon/grenade/imperial(src)
-		new /obj/item/weapon/grenade/imperial(src)
-		new /obj/item/weapon/grenade/imperial(src)
+
 
 /obj/item/weapon/storage/box/krakgrenades
 	name = "Krak Grenades"
@@ -594,9 +592,6 @@ Callidus Box
 
 	New()
 		..()
-		new /obj/item/weapon/grenade/krak(src)
-		new /obj/item/weapon/grenade/krak(src)
-		new /obj/item/weapon/grenade/krak(src)
 		new /obj/item/weapon/grenade/krak(src)
 		new /obj/item/weapon/grenade/krak(src)
 		new /obj/item/weapon/grenade/krak(src)

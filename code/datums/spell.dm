@@ -303,3 +303,5 @@ var/list/spells = typesof(/obj/effect/proc_holder/spell) //needed for the badmin
 	if((human_req || clothes_req) && !ishuman(caster))
 		return 0
 	return 1
+
+

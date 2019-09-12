@@ -50,7 +50,6 @@ Head of Shitcurity
 	else
 		H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_in_backpack)
 
-
 	spawn(10)
 		var/weaponchoice = input(H, "Select a weapon.","Weapon Selection") as null|anything in list("Power Sword","Mercy Chainsword", "Hell Pistol",)
 		switch(weaponchoice)
@@ -60,7 +59,6 @@ Head of Shitcurity
 				H.equip_to_slot_or_del(new /obj/item/weapon/twohanded/chainswordig(H), slot_r_hand)
 			if("Bolter Pistol")
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/hellpistol(H), slot_r_hand)
-
 
 /*
 Detective

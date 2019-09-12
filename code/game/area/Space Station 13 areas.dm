@@ -122,7 +122,7 @@ proc/process_ghost_teleport_locs()
 /area/admin
 	name = "\improper Admin room"
 	icon_state = "start"
-
+	requires_power = 0
 
 /area/space
 	requires_power = 1

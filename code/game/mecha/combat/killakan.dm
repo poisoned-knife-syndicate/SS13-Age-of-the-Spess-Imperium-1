@@ -4,7 +4,7 @@
 	icon = 'icons/migrated/alienqueen.dmi'
 	icon_state = "killakan"
 	step_in = 6
-	health = 20000
+	health = 10000
 	deflect_chance = 50
 	damage_absorption = list("brute"=10,"fire"=10,"bullet"=10,"laser"=10,"energy"=10,"bomb"=10)
 	max_temperature = 65000

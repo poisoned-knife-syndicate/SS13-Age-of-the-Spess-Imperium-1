@@ -120,7 +120,7 @@
 
 /obj/item/weapon/grenade/imperial/prime()
 	update_mob()
-	explosion(src.loc,0,0,0.5,flame_range = 2, shrapnel_count = 200) //Basically no actual explosion blast, just a huge spray of shrapnel.
+	explosion(src.loc,0,0,0.5,flame_range = 2, shrapnel_count = 20) //Basically no actual explosion blast, just a decent sharpnel splash
 	qdel(src)
 
 /obj/item/weapon/grenade/imperial/suicide_act(var/mob/user)
@@ -176,9 +176,7 @@
 
 /obj/item/weapon/grenade/krak/prime()
 	update_mob()
-	explosion(src.loc,2,2,2,flame_range = 2)
-	spawn(1) explosion(src.loc,1,1,1,flame_range = 0) //Heavy hitter in the epicenter of the blast.
-	spawn(2) explosion(src.loc,1,1,1,flame_range = 0)
+	explosion(src.loc,1,1,3,flame_range = 2 )
 	qdel(src)
 
 /obj/item/weapon/grenade/krak/suicide_act(var/mob/user)

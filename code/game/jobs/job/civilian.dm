@@ -66,6 +66,29 @@ Inquisitor
 			if("Stubber Pistol")
 				H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/automatic/pistol(H), slot_r_hand)
 
+/*
+/datum/job/psyker
+	title = "Librarian"
+	flag = LIBRARIAN
+	department_head = list("Commissar")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Commissar or the Inquisition"
+	selection_color = "#dddddd"
+
+
+	access = list(access_maint_tunnels)
+	minimal_access = list(access_maint_tunnels)
+
+/datum/job/librarian/equip_items(var/mob/living/carbon/human/H)
+	H.verbs += /mob/living/carbon/human/proc/renderaid									 //This is how we get the verb!
+	H.equip_to_slot_or_del(new /obj/item/clothing/under/suit_jacket/red(H), slot_w_uniform)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/(H), slot_shoes)
+	H.equip_to_slot_or_del(new /(H), slot_r_store)
+	H.equip_to_slot_or_del(new (H), slot_l_store)
+*/
 
 //--Eldar Spy--
 

@@ -5,7 +5,7 @@
 	icon_state = "wraithlord"
 	//pixel_x = -10
 	step_in = 6
-	health = 1500 //No more 200,000 health levels...
+	health = 850 //No more 200,000 health levels...
 	deflect_chance = 50
 	damage_absorption = list("brute"=0.3,"fire"=0.3,"bullet"=0.3,"laser"=0.3,"energy"=0.3,"bomb"=0.3)
 	max_temperature = 65000

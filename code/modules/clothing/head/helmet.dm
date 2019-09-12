@@ -240,6 +240,14 @@ imperial class helment
 	heat_protection = HEAD
 	max_heat_protection_temperature = HELMET_MAX_TEMP_PROTECT
 
+/obj/item/clothing/head/helmet/PsykerHat
+	name = "Sanctioned Psyket Hat"
+	desc = "WITHNESS YOUR DOOM!!....Again."
+	icon_state = "psyker_hat"
+	item_state = "psyker_hat"
+	armor = list(melee = 45, bullet = 45, laser = 40, energy = 90, bomb = 45, bio = 10, rad = 10)
+	body_parts_covered = HEAD
+
 /obj/item/clothing/head/valhalla
 	name = "Valhallan Helmet"
 	desc = "A cold resistant, heavily padded helmet that is issued to the Valhallan Ice Warriors."

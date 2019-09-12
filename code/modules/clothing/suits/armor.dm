@@ -414,7 +414,7 @@ Lord Inquisitor Armor
 	desc = "A World Bearer Power armor."
 	icon_state = "chaos-armor"
 	item_state = "chaos-armor"
-	armor = list(melee = 85, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 90, rad = 95)
+	armor = list(melee = 80, bullet = 80, laser = 80, energy = 100, bomb = 80, bio = 80, rad = 95)
 	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/gun/projectile/automatic/bolter)
 
 /obj/item/clothing/suit/armor/NMarmor
@@ -507,7 +507,7 @@ Lord Inquisitor Armor
 	item_state = "guardsman_armor"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN
-	armor = list(melee = 30, bullet = 10, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 40, laser = 30,energy = 20, bomb = 25, bio = 0, rad = 0)
 	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun,/obj/item/weapon/gun/projectile/automatic/autogun2,)
 
 /obj/item/clothing/suit/armor/imperialarmor/medic
@@ -517,7 +517,7 @@ Lord Inquisitor Armor
 	item_state = "guardsmanmedic_armor"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN
-	armor = list(melee = 25, bullet = 10, laser = 25,energy = 10, bomb = 15, bio = 25, rad = 0) //In case of... Nurgle?
+	armor = list(melee = 25, bullet = 30, laser = 35,energy = 20, bomb = 15, bio = 25, rad = 0) //In case of... Nurgle?
 	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun,/obj/item/weapon/gun/projectile/automatic/autogun2,)
 
 /obj/item/clothing/suit/armor/imperialarmor/leader
@@ -527,17 +527,17 @@ Lord Inquisitor Armor
 	item_state = "guardsmanleader_armor"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|GROIN
-	armor = list(melee = 40, bullet = 40, laser = 40,energy = 30, bomb = 35, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 45, laser = 45,energy = 35, bomb = 35, bio = 0, rad = 0)
 	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun,/obj/item/weapon/gun/projectile/automatic/autogun2,)
 
 /obj/item/clothing/suit/armor/imperialarmor/reinforced
 	name = "Reinforced Flak Armor"
-	desc = "Imperial guard flak armor. It looks very heavily padded."
+	desc = "Imperial guard flak armor."
 	icon_state = "flakarmor"
 	item_state = "flakarmor"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|ARMS|GROIN
-	armor = list(melee = 65, bullet = 45, laser = 50, energy = 50, bomb = 40, bio = 0, rad = 5)
+	armor = list(melee = 55, bullet = 45, laser = 50, energy = 50, bomb = 40, bio = 0, rad = 5)
 
 /obj/item/clothing/suit/armor/imperialarmor/kasrkinarmor
 	name = "Cadian Shock Trooper armor"
@@ -546,7 +546,7 @@ Lord Inquisitor Armor
 	item_state = "kasrkinarmor"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|ARMS|GROIN
-	armor = list(melee = 65, bullet = 55, laser = 50, energy = 50, bomb = 40, bio = 0, rad = 5)
+	armor = list(melee = 65, bullet = 65, laser = 50, energy = 50, bomb = 40, bio = 0, rad = 5)
 	allowed = list(/obj/item/weapon/gun/projectile/automatic/lasgun,/obj/item/weapon/gun/projectile/automatic/autogun2,/obj/item/weapon/gun/energy/plasma/rifle)
 
 /obj/item/clothing/suit/armor/carapace
@@ -677,6 +677,14 @@ Lord Inquisitor Armor
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	armor = list(melee = 60, bullet = 55, laser = 55, energy = 15, bomb = 25, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/Psykercoat
+	name = "Sanctioned Psyker Coat"
+	desc = "WITHNESS YOUR DOOM!!"
+	icon_state = "psyker_armor"
+	item_state = "psyker_armor"
+	blood_overlay_type = "armor"
+	armor = list(melee = 35, bullet = 35, laser = 30, energy = 20, bomb = 25, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/inq
 	name = "Inquisitor Suit"

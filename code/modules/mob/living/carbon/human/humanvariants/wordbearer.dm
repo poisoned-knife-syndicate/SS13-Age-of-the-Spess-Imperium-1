@@ -1,4 +1,4 @@
-/mob/living/carbon/human/whitelisted/worldbearer
+/mob/living/carbon/human/whitelisted/wordbearer
 	name = "Unknown"
 	real_name = "Unknown"
 	suicide_allowed = 0
@@ -6,7 +6,7 @@
 	gender = "male"
 	status_flags = 0
 
-/mob/living/carbon/human/whitelisted/worldbearer/New()
+/mob/living/carbon/human/whitelisted/wordbearer/New()
 	..()
 	sleep (5)
 	var/obj/item/device/radio/headset/R = new /obj/item/device/radio/headset/headset_cent
@@ -34,7 +34,7 @@
 	W.icon_state = "umcard"
 	W.access = get_all_accesses()
 	W.access += get_centcom_access("UltraMarine")
-	W.assignment = "World Bearer"
+	W.assignment = "Word Bearer"
 	W.registered_name = real_name
 	W.update_label()
 	equip_to_slot_or_del(W, slot_wear_id)

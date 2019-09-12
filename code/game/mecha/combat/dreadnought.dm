@@ -6,8 +6,8 @@
 	//pixel_x = -10
 	bound_width = 64
 	step_in = 6
-	health = 1500
-	deflect_chance = 50
+	health = 1100
+	deflect_chance = 65
 	damage_absorption = list("brute"=0.3,"fire"=0.3,"bullet"=0.4,"laser"=0.5,"energy"=0.3,"bomb"=1)
 	max_temperature = 65000
 	infra_luminosity = 3

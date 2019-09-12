@@ -182,7 +182,7 @@
 	corpseradio = /obj/item/device/radio/headset/headset_sec
 	corpseuniform = /obj/item/clothing/under/rank/security
 	corpseshoes = /obj/item/clothing/shoes/imperialboots/reinforced
-	corpsesuit = /obj/item/clothing/suit/armor/imperialarmor/reinforced
+	corpsesuit = /obj/item/clothing/suit/armor/imperialarmor/
 	corpsehelmet = /obj/item/clothing/head/imperialhelmet/reinforced
 	corpsegloves = /obj/item/clothing/gloves/black
 	corpsebrute = 300

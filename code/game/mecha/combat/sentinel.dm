@@ -5,7 +5,7 @@
 	icon_state = "sentinel"
 	step_in = 2
 	dir_in = 1 //Facing North.
-	health = 250
+	health = 350
 	deflect_chance = 5
 	damage_absorption = list("brute"=0.75,"fire"=1,"bullet"=0.8,"laser"=0.7,"energy"=0.85,"bomb"=1)
 	max_temperature = 25000
