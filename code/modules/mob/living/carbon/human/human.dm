@@ -7,6 +7,7 @@
 	var/list/hud_list = list()
 	var/treating = 0
 	var/purity = 0
+	var/sage = 0
 
 /mob/living/carbon/human/dummy
 	real_name = "Test Dummy"
